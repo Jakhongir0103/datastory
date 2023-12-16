@@ -35,6 +35,13 @@ We conducted our analysis by first putting together hypotheses of how a successf
 
 `tyr dynamic plots`
 #### with iframe
-<div style="width: 750px; height: 530px; overflow: hidden;">
-  <iframe src="assets/plot/output_plot.html" width="750px" height="530px" frameborder="0" position="relative"> </iframe>
+
+<iframe src="assets/plot/output_plot.html" width="750px" height="530px" frameborder="0" position="relative"><iframe>
+
+#### with include
+{% include assets/plot/output_plot.html %}
+
+#### include with size
+<div style="width: 750px; height: 530px;">
+  {% include assets/plot/output_plot.html %}
 </div>
