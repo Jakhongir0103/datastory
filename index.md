@@ -1,14 +1,12 @@
 ---
 layout: page
 title: A Numbers-Backed Journey to Rock Your Tech Channel
-subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/movie.png
 share-img: /assets/img/path.jpg
-tags: [tech, youtube]
+use-site-title: true
 author: Jakhongir Saydaliev, ...
 ---
-
-# Welcome to the Datasquad Blogpost
 
 If you're interested in creating your own YouTube channel in the field of tech product reviews or are curious about how these channels gain attraction and evolve over time, you've made the right choice by clicking this link!
 
