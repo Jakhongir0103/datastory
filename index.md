@@ -45,6 +45,3 @@ We conducted our analysis by first putting together hypotheses of how a successf
 <div style="width: 750px; height: 530px;">
   {% include plot/output_plot.html %}
 </div>
-
-#### with include
-{% include output_plot.html %}
