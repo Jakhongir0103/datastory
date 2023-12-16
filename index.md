@@ -1,11 +1,11 @@
 ---
 layout: page
-title: A Numbers-Backed Journey to Rock Your Tech Channel
+title: Journey to Tech World
+subtitle: A Numbers-Backed Analysis to Rock Your YouTube Tech Channel
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/movie.png
+thumbnail-img: /assets/img/path.png
 share-img: /assets/img/path.jpg
 use-site-title: true
-author: Jakhongir Saydaliev, ...
 ---
 
 If you're interested in creating your own YouTube channel in the field of tech product reviews or are curious about how these channels gain attraction and evolve over time, you've made the right choice by clicking this link!
@@ -32,3 +32,6 @@ We conducted our analysis by first putting together hypotheses of how a successf
 1. Do product release events even matter to YouTubers?
 2. What are the topics discussed pre/during/post release?
 
+
+`tyr dynamic plots`
+<iframe src="assets/plot/output_plot.html" width="750px" height="530px" frameborder="0" position="relative">Dynamic plot</iframe>
