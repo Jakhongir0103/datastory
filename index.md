@@ -34,4 +34,5 @@ We conducted our analysis by first putting together hypotheses of how a successf
 
 
 `tyr dynamic plots`
-<iframe src="assets/plot/output_plot.html" width="750px" height="530px" frameborder="0" position="relative">Dynamic plot</iframe>
+
+<iframe src="assets/plot/output_plot.html" frameborder="0" position="relative"></iframe>
