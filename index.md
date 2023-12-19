@@ -49,12 +49,7 @@ We look at the influence of a release event on the success of a channel that tal
 Before doing the comparison between 2 groups, we first want to balance these groups on the number of subscribers, frequency of uploading a video, and the ratio of tech review videos, because these features (especially the number of subscribers and tech video ratio) might be a confounder of the growth of the channel.
 
 After doing the balancing, we observed that only the groups with less than 10 videos and the ones with more than 10 but less than 50 were relevant four our analysis as the number of channels with a higher number of videos was too small. So, we focused on these 2 groups only.
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7d1fb195-6575-4ed6-b61e-b9984944fbfe/c08f46f0-dfcb-4f9d-a346-e052645e9af1/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7d1fb195-6575-4ed6-b61e-b9984944fbfe/669c1d2c-819a-460f-996a-c457545bdad7/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7d1fb195-6575-4ed6-b61e-b9984944fbfe/53ddb7ee-b528-4de5-a6a6-d86a0fbc153e/Untitled.png)
+###plots
 
 The green line corresponds to the release date whereas the 2 red lines define our  “window of interest “ ( 6 months before/after the event).
 
