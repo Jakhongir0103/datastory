@@ -147,8 +147,6 @@ The main observation that we can do in this case, is that on average, the higher
 
 Now, we want to plot the moving average regularity and channels' growth to see if we can spot some clear relation between them:
 
-<!-- <iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe> -->
-
 <script>
 function showFrame2(frameId) {
   // Get all iframes with the regularity_all class
@@ -174,7 +172,7 @@ function showFrame2(frameId) {
   <option value="5">500k-1M</option>
   <option value="6">1M-2.5M</option>
   <option value="7">2.5M-5M</option>
-  <option value="8">5M+</option>
+  <option value="8" selected>5M+</option>
 </select>
 
 <!-- Create the iframes -->
@@ -202,9 +200,6 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups. Using the same time series comparison that we have done before. 
 
-<!-- <iframe src="assets/plot/1_2_regularity_lines_range_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe> -->
-
-
 <script>
 function showFrame1(frameId) {
   // Get all iframes with the regularity_range class
@@ -223,7 +218,7 @@ function showFrame1(frameId) {
 
 <!-- Create the dropdown menu -->
 <select onchange="showFrame1(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
-  <option value="positive">Above 32</option>
+  <option value="positive" selected>Above 32</option>
   <option value="negative">Below 32</option>
 </select>
 
