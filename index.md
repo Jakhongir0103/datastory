@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Journey to Tech World
-subtitle: A Numbers-Backed Analysis to Rock Your YouTube Tech Channel
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/path.png
-share-img: /assets/img/path.jpg
+title:  A Numbers-Backed Analysis to Rock Your YouTube Tech Channel
+subtitle: by Salma Ed-Dahabi, Jakhongir Saydaliev, Zied Masmoudi, Ali Essonni, Othmane Oudghiri
+cover-img: /assets/img/ada_thumbnail.png
+thumbnail-img: /assets/img/ada_thumbnail.png
+share-img: /assets/img/ada_thumbnail.png
 use-site-title: true
 ---
 
