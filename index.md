@@ -164,47 +164,7 @@ The main observation that we can do in this case, is that on average, the higher
 
 Now, we want to plot the moving average regularity and channels' growth to see if we can spot some clear relation between them:
 
-```
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Menu for Plots</title>
-</head>
-
-<body>
-
-  <label for="plotDropdown">Select a Plot:</label>
-  <select id="plotDropdown" onchange="changePlot()">
-    <option value="assets/plot/1_2_regularity_lines0-10k.html">0-10k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines10k-50k.html">10k-50k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines50k-100k.html">50k-100k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines100k-500k.html">100k-500k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines500k-1M.html">500k-1M Subscribers</option>
-  </select>
-
-  <iframe id="plotFrame" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
-
-  <script>
-    function changePlot() {
-      var dropdown = document.getElementById("plotDropdown");
-      var selectedPlot = dropdown.options[dropdown.selectedIndex].value;
-      document.getElementById("plotFrame").src = selectedPlot;
-    }
-  </script>
-
-</body>
-
-</html>
-
-```
-
-<iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
-
-
-
+<iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe
 
 Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
 

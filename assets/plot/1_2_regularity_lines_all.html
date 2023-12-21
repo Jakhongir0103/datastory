@@ -5,20 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropdown Menu for Plots</title>
+  <style>
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
 
   <label for="plotDropdown">Select a Plot:</label>
   <select id="plotDropdown" onchange="changePlot()">
-    <option value="assets/plot/1_2_regularity_lines0-10k.html">0-10k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines10k-50k.html">10k-50k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines50k-100k.html">50k-100k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines100k-500k.html">100k-500k Subscribers</option>
-    <option value="assets/plot/1_2_regularity_lines500k-1M.html">500k-1M Subscribers</option>
+    <option value="1_2_regularity_lines0-10k.html">0-10k Subscribers</option>
+    <option value="1_2_regularity_lines10k-50k.html">10k-50k Subscribers</option>
+    <option value="1_2_regularity_lines50k-100k.html">50k-100k Subscribers</option>
+    <option value="1_2_regularity_lines100k-500k.html">100k-500k Subscribers</option>
+    <option value="1_2_regularity_lines500k-1M.html">500k-1M Subscribers</option>
   </select>
 
-  <iframe id="plotFrame" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+  <iframe id="plotFrame" src="1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
   <script>
     function changePlot() {
