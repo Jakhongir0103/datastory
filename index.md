@@ -165,25 +165,25 @@ function showFrame2(frameId) {
 
 <!-- Create the dropdown menu -->
 <select onchange="showFrame2(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
-  <option value="1">0-10k</option>
-  <option value="2">10k-50k</option>
-  <option value="3">50k-100k</option>
-  <option value="4">100k-500k</option>
-  <option value="5">500k-1M</option>
-  <option value="6">1M-2.5M</option>
-  <option value="7">2.5M-5M</option>
-  <option value="8" selected>5M+</option>
+  <option value="id_1">0-10k</option>
+  <option value="id_2">10k-50k</option>
+  <option value="id_3">50k-100k</option>
+  <option value="id_4">100k-500k</option>
+  <option value="id_5">500k-1M</option>
+  <option value="id_6">1M-2.5M</option>
+  <option value="id_7">2.5M-5M</option>
+  <option value="id_8" selected>5M+</option>
 </select>
 
 <!-- Create the iframes -->
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="1" style="display: block;">0-10k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="2" style="display: none;">10k-50k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="3" style="display: block;">50k-100k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="4" style="display: none;">100k-500k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="5" style="display: block;">500k-1M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="6" style="display: none;">1M-2.5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="530px" frameborder="0" position="relative" id="7" style="display: block;">2.5M-5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="8" style="display: none;">5M+ Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: block;">0-10k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">10k-50k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3" style="display: block;">50k-100k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_4" style="display: none;">100k-500k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_5" style="display: block;">500k-1M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_6" style="display: none;">1M-2.5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_7" style="display: block;">2.5M-5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="id_8" style="display: none;">5M+ Subscribers</iframe>
 
 
 
