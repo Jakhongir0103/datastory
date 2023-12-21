@@ -176,15 +176,14 @@ function showFrame2(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: block;">0-10k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: none;">0-10k</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">10k-50k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3" style="display: block;">50k-100k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3" style="display: none;">50k-100k</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_4" style="display: none;">100k-500k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_5" style="display: block;">500k-1M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_5" style="display: none;">500k-1M</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_6" style="display: none;">1M-2.5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_7" style="display: block;">2.5M-5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="id_8" style="display: none;">5M+ Subscribers</iframe>
-
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_7" style="display: none;">2.5M-5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="id_8" style="display: block;">5M+ Subscribers</iframe>
 
 
 Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
