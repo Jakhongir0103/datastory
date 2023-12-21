@@ -150,7 +150,7 @@ Now, we want to plot the moving average regularity and channels' growth to see i
 <!-- <iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe> -->
 
 <script>
-function showFrame(frameId) {
+function showFrame2(frameId) {
   // Get all iframes with the regularity_all class
   var frames = document.getElementsByClassName('regularity_all');
 
@@ -166,25 +166,25 @@ function showFrame(frameId) {
 </script>
 
 <!-- Create the dropdown menu -->
-<select onchange="showFrame(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
-  <option value="1">0-10k Subscribers</option>
-  <option value="2">10k-50k Subscribers</option>
-  <option value="3">50k-100k Subscribers</option>
-  <option value="4">100k-500k Subscribers</option>
-  <option value="5">500k-1M Subscribers</option>
-  <option value="6">1M-2.5M Subscribers</option>
-  <option value="7">2.5M-5M Subscribers</option>
-  <option value="8">5M+ Subscribers</option>
+<select onchange="showFrame2(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+  <option value="1">0-10k</option>
+  <option value="2">10k-50k</option>
+  <option value="3">50k-100k</option>
+  <option value="4">100k-500k</option>
+  <option value="5">500k-1M</option>
+  <option value="6">1M-2.5M</option>
+  <option value="7">2.5M-5M</option>
+  <option value="8">5M+</option>
 </select>
 
 <!-- Create the iframes -->
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="1" style="display: block;">0-10k Subscribers</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="2" style="display: none;">10k-50k Subscribers</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="3" style="display: block;">50k-100k Subscribers</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="4" style="display: none;">100k-500k Subscribers</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="5" style="display: block;">500k-1M Subscribers</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="6" style="display: none;">1M-2.5M Subscribers</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5<.html" width="750px" height="530px" frameborder="0" position="relative" id="7" style="display: block;">2.5M-5M Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="1" style="display: block;">0-10k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="2" style="display: none;">10k-50k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="3" style="display: block;">50k-100k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="4" style="display: none;">100k-500k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="5" style="display: block;">500k-1M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="6" style="display: none;">1M-2.5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5<.html" width="750px" height="530px" frameborder="0" position="relative" id="7" style="display: block;">2.5M-5M</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="8" style="display: none;">5M+ Subscribers</iframe>
 
 
@@ -204,8 +204,9 @@ From the above plot we can see that the higher regularities are more correlated 
 
 <!-- <iframe src="assets/plot/1_2_regularity_lines_range_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe> -->
 
+
 <script>
-function showFrame(frameId) {
+function showFrame1(frameId) {
   // Get all iframes with the regularity_range class
   var frames = document.getElementsByClassName('regularity_range');
 
@@ -221,9 +222,9 @@ function showFrame(frameId) {
 </script>
 
 <!-- Create the dropdown menu -->
-<select onchange="showFrame(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
-  <option value="positive">Regularity above 32</option>
-  <option value="negative">Regularity below 32</option>
+<select onchange="showFrame1(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+  <option value="positive">Above 32</option>
+  <option value="negative">Below 32</option>
 </select>
 
 <!-- Create the iframes -->
