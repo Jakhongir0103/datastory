@@ -176,7 +176,7 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 - We first select all the channels that have been in this range at some point of time during this period and let's check how does the subscribers growth rate evolves depending on the regularity bin.
 
-**plots**
+<iframe src="assets/plot/1_2_bars_2.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe
 
 From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups. Using the same time series comparison that we have done before. 
 
