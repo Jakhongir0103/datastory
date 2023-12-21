@@ -21,8 +21,7 @@ We conducted our analysis by first putting together hypotheses of how a successf
 ### Characteristics of a Successful Tech Channel:
 1. What should be the duration of your videos?
 2. What should be the upload frequency?
-3. What is the right range of products to review?
-4. Which types of tech products attract more attention?
+3. How does the review product type influence the channels' growth?
 
 ### How to Attract Views with Your Video Titles:
 1. Does the sentiment of the title have an impact on the views of the video?
@@ -41,6 +40,243 @@ fig.update_layout(width=700, height=500) -->
 <iframe src="assets/plot/output_plot.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
 # The rest of the blog
+
+
+
+
+
+
+
+
+
+
+# What should be the duratio of your videos?
+
+Have you ever wondered how the trend of a YouTube video’s length evolves through time? Does it have anything to do with the success of the video? And if we want to upload a video of what duration should it be? We try to get some insights on these questions by analyzing video durations.
+
+In our analysis we split videos into 2 groups short to medium length videos (0-20 minutes) and medium to long videos (more than 20 minutes) as we suppose these are 2 significantly different video types.
+
+### Videos of less than 20 minutes
+
+The first basic thing to do is to see whether there exists a correlation between video durations and number of likes and dislikes.
+
+**plots**
+
+There is a relatively high positive correlation (that is decreasing across the years), but significant (p_value < 0.05) between the duration of a video and the number of likes it gets. Moreover, we see significant negative correlations in most years between # of dislikes and duration and so with longer videos the number of dislikes decreases. This can be explained by the fact that with longer videos on average, the video contains more content and so is more valuable/interesting and thus gets more likes and less dislikes.
+
+Let's now see the trend of likes, dislikes, and duration over the years to take their evolution into consideration.
+
+**plots**
+
+We see from the above plots that both the number of dislikes and likes have been increasing across the years, potentially due to more users on the platform or more user engagement. We particularly note that the rate of increase of the number of likes is much higher than the one of dislikes as shown by the increasing ratio of like/dislike. This combined with the fact that the length of YouTube videos has been increasing over the years explains why we had higher correlation between duration and likes than we had with dislikes.
+
+Let's now see how the video duration is related to user engagement. We do it by plotting the moving average of likes to dislikes ratio over the duration of a video.
+
+**plots**
+
+Wow!! See that huge drop around 600 seconds =10 minutes?? Is it by sheer luck?? Let’s dig deeper into this.
+
+Our hypothesis is that the drop could be caused by an enormous number of 10min videos on YouTube that contain low quality content, as youtubers usually try to produce videos around this duration to benefit from more ads on their videos (YouTube has a video length threshold of 10 min past which youtubers get 2 ads on their videos and thus more money). Let’s try to prove this.
+
+**plots**
+
+First we make sure that the drop is not caused by the “moving” nature of the average. Indeed, we see that even by plotting the mean for each time interval (not 'moving') the drop is still there. Also, we notice that the number of likes decreased but the number of dislikes and number of videos stayed the same between the 10 min interval and the interval before it.
+
+Let’s try to focus only on the 10 minute videos.
+
+**plots**
+
+hmm, interesting?? This looks like a power law. Could the drop be caused by outliers? Let’s  plot the median instead of the mean.
+
+**plots**
+
+Nope! The drop is still there.
+
+What if we compute the sum ?
+
+**plots**
+
+We see from the above plot that the sum is decreasing from small duration to high duration (from the left time interval to the right time interval), but remember that the *number of videos* stayed the same for the 2 time intervals (480.2, 600] and (600, 719.8] which **explains the drop seen** when computing the mean (as we have the same denominator but a lower numerator: the like to dislike ratio is decreasing from small duration to high duration, whereas the number of videos has been decreasing from small duration to high duration **except** for the time interval of around 600 seconds = 10 minutes).
+
+For the curious ones, further analysis on why the number of videos stayed the same for these 2 duration intervals can be found in our notebook.
+
+### Videos of more than 20 minutes
+
+Of course not all tech videos are less than 20 minutes, so now let's turn our attention to the videos of more than 20 minutes and apply the same analysis on them as we did above.
+
+**plots**
+
+The opposite effect is seen here compared to videos of less than 20 minutes. The longer the video the more dislikes it gets and the less likes it gets which makes sense as longer videos (longer than 20 minutes) tend to be boring/redundant.
+
+**plots**
+
+Similarly for this case, the number of dislikes and likes have been increasing across the years. However, here we see that the length of YouTube videos has been decreasing over the years, maybe hinting at the fact that youtubers noticed that longer videos bore people more and they thus went for shorter videos. Let's now see how the video duration is related to user engagement.
+
+**plots**
+
+Okay, we see that the ratio of likes to dislikes is fluctuating a lot for videos between 1200 seconds (20 min) and 10000 seconds (2.7 hours). Because this is a wide range, let's see how the videos spread out across this range and then break it down into smaller ranges and see what the videos are about in different smaller duration ranges.
+
+**plots**
+
+So now, let's see what the people are speaking about in the videos.
+
+**plots**
+
+As we can see from above, the videos between 20 and 60 minutes which account for (get the percentage of these videos from all long videos) of the videos, are still about the review of the tech products, but they are full and extended review video possibly broken into several parts, while the videos with duration above 1h are more from the release day live videos, that last for a couple of hours.
+
+Putting it all together we can say that the best range for the duration of a video is between 16 min and 2.7 hours, however longer videos are usually meant for live videos from conferences. The main takeaway here is that we certainly want to avoid having really short videos in order to provide meaningful content to viewers and also avoid having really long videos so that we avoid boring them!
+
+
+# What should be the upload frequency?
+As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews , one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
+
+As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie.
+
+[0:10000]  and  [10 000:50 000]   Very small YouTubers that often publish videos for fun and to their very small community.
+
+[50 000 : 100 000] and [100 000 : 500 000]: YouTubers that start to have sponsors , and thus some obligations to be regular as it's starting to take most of their time.
+
+[500 000: 1 000 000] and [1 000 000 : 2 500 000]: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
+
+[2 500 000: 5 000 000] and 5 000 000 + , very few YouTubers, known worldwide and being a reference as tech channels.
+
+Let's first see their repartitions in this pie chart:
+
+<iframe src="assets/plot/1_2_pie.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+
+We can remark that more than half of them are small YouTubers, that almost a fifth are mid-range YouTubers, and that only around 6% of them are famous and have more than 500k subscribers. Our question then is , do you upload more frequency when you are famous? And more specifically, is the category in which you lie impacts your regularity?
+
+And to perform this analysis , let's define a metric that will help us to measure this regularity :
+
+let n be the number of videos uploaded within a month for some YouTubers.
+
+let f be the 1/delay between 2 consecutive videos
+
+regularity = n * log (1 + 1/std(f)) 
+
+This metric evaluates not just the frequency of video uploads on tech channels but also the consistency of their posting schedule. Channels that maintain a regular interval between video uploads gain a distinct advantage, highlighting the importance of a steady content rhythm. In contrast, channels with erratic schedules—such as releasing multiple videos on a single day followed by a prolonged period of inactivity—are less favored by this metric. Thus, while the overall quantity of content remains a key factor, the regularity and predictability of uploads emerge as crucial elements in driving channel growth.
+
+And that is what we observe in this plot:
+
+<iframe src="assets/plot/1_2_bars_1.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+
+The main observation that we can do in this case, is that on average, the higher the category (and thus the number of subscribers), the higher the regularity is, and confidence intervals are not overlapping anywhere but in within the first two categories that represent relatively small youtubers.
+
+Now, we want to plot the moving average regularity and channels' growth to see if we can spot some clear relation between them:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu for Plots</title>
+</head>
+
+<body>
+
+  <label for="plotDropdown">Select a Plot:</label>
+  <select id="plotDropdown" onchange="changePlot()">
+    <option value="assets/plot/1_2_regularity_lines0-10k.html">0-10k Subscribers</option>
+    <option value="assets/plot/1_2_regularity_lines10k-50k.html">10k-50k Subscribers</option>
+    <option value="assets/plot/1_2_regularity_lines50k-100k.html">50k-100k Subscribers</option>
+    <option value="assets/plot/1_2_regularity_lines100k-500k.html">100k-500k Subscribers</option>
+    <option value="assets/plot/1_2_regularity_lines500k-1M.html">500k-1M Subscribers</option>
+  </select>
+
+  <iframe id="plotFrame" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+
+  <script>
+    function changePlot() {
+      var dropdown = document.getElementById("plotDropdown");
+      var selectedPlot = dropdown.options[dropdown.selectedIndex].value;
+      document.getElementById("plotFrame").src = selectedPlot;
+    }
+  </script>
+
+</body>
+
+</html>
+
+```
+
+<iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+
+
+
+
+Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
+
+For youtubers that have more than 5 000 0000 subscribers, we can observe that the growth rate fluctuates a lot, as they are only few youtubers within that category so it's more volatile, but despite the fluctuations, the trend is in overall similar to that of regularity.
+
+Beyond these observations, a seasonal rhythm pulsates through almost all categories. In the end of the years (except for YouTubers between 500k- 1M subscribers) , a noticeable uptick in posting regularity is observed. This spike intriguingly aligns with the festive frenzy of Christmas, Thanksgiving, Black Friday, and major tech releases like video games and smartphones, including the much-anticipated iPhone launches. This seasonal phenomenon hints at a broader narrative, one that we will delve into with greater detail in Section 3 of our story.
+
+Now, let's focus more on the group 4 (500k-1M subs), that has been problematic during the previous analysis:
+
+- We first select all the channels that have been in this range at some point of time during this period and let's check how does the subscribers growth rate evolves depending on the regularity bin.
+
+**plots**
+
+From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups. Using the same time series comparison that we have done before. 
+
+**plots**
+
+From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, the channel's growth rate is influenced by regularity only if it is sufficiently high; otherwise, other factors may have a greater impact on growth.
+
+Additionally, when calculating the average number of videos per month for YouTubers who achieved a regularity of 32 or more, we find that this corresponds to nearly 33 videos per month, or about one video per day.
+
+The main conclusion for this question is that, in general, high regularity (i.e., a consistent and frequent video upload rate with low volatility) is associated with greater success and a higher growth rate. Even in some problematic categories where the correlation is generally unclear, very high regularity still correlates with a high growth rate.
+
+However, if you are a YouTuber with 500k to 1M subscribers and have chosen to maintain high regularity to accelerate growth, it's important to note that you should sustain this pace to preserve this growth rate, as reducing the frequency will likely lead to a decreased growth rate.
+
+
+# How does the review product type influence the channels' growth?
+
+
+In this section, we are going to focus on the types of review products. More specifically, we want to understand what types of tech products have a higher influence to the growth of our channel, or does it even matter at all? We take the following 7 product types and see their effect:
+
+<table style="border: 1px solid black;">
+  <tr>
+    <td>Laptop</td>
+    <td>Phone</td>
+    <td>Camera</td>
+    <td>Headphone</td>
+    <td>Smart Watch</td>
+    <td>Tablet</td>
+    <td>Desktop Setup</td>
+  </tr>
+</table>
+
+Let's first see which product types are more common among the YouTubers, then we will answer the following sub-questions:
+
+- What range of product types should be covered?
+- What product categories have higher influence on the channels growth?
+- Which product categories attract more viewers?
+
+**plots**
+
+
+As we can see, most channels tend to focus on phones. It just means phones are a common topic to focus on, but we still need to see (in the next sub-section) how it actually influences the channel's growth.
+
+Below, we analyze the effect of covering a wider range of products, on the number of subscribers, a narrow range of products. To ensure the accuracy of our analysis, and to remove the effect of any possible confounder, we first balance these 2 groups (wide, narrow) on some metrics, namely average duration of videos per channel, and the delay in time between publishing 2 sequential videos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Making the Most of Product Release Dates:
 1. Do product release events even matter to YouTubers?
