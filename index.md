@@ -182,8 +182,9 @@ function showFrame2(frameId) {
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="4" style="display: none;">100k-500k</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="5" style="display: block;">500k-1M</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="6" style="display: none;">1M-2.5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5<.html" width="750px" height="530px" frameborder="0" position="relative" id="7" style="display: block;">2.5M-5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="530px" frameborder="0" position="relative" id="7" style="display: block;">2.5M-5M</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="8" style="display: none;">5M+ Subscribers</iframe>
+
 
 
 Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
