@@ -165,6 +165,34 @@ From the above plot we can see that the higher regularities are more correlated 
 
 <iframe src="assets/plot/1_2_regularity_lines_range_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
+
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
+
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('positive')">above 32</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('negative')">below 32</button>
+
+<!-- Create the iframes -->
+<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">above 32</iframe>
+<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">below 32</iframe>
+
+
+
 From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, the channel's growth rate is influenced by regularity only if it is sufficiently high; otherwise, other factors may have a greater impact on growth.
 
 Additionally, when calculating the average number of videos per month for YouTubers who achieved a regularity of 32 or more, we find that this corresponds to nearly 33 videos per month, or about one video per day.
