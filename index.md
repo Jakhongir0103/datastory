@@ -180,7 +180,7 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups. Using the same time series comparison that we have done before. 
 
-**plots**
+<iframe src="assets/plot/1_2_regularity_lines_range_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe
 
 From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, the channel's growth rate is influenced by regularity only if it is sufficiently high; otherwise, other factors may have a greater impact on growth.
 
