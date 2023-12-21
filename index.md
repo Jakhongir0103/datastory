@@ -430,9 +430,9 @@ function showFrame4(frameId) {
 </div>
 
 <!-- Create the images -->
-<img class="3_1_balance" src="assets/plot/3_1_balance_1.png" width="600" height="400" style="display: block; margin: 0 auto; margin-bottom: 8px" id="id_1_bal" alt="Plot">
-<img class="3_1_balance" src="assets/plot/3_1_balance_2.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_2_bal" alt="Plot">
-<img class="3_1_balance" src="assets/plot/3_1_balance_3.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_3_bal" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_1.png" width="700" height="470" style="display: block; margin: 0 auto; margin-bottom: 8px" id="id_1_bal" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_2.png" width="700" height="470" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_2_bal" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_3.png" width="700" height="470" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_3_bal" alt="Plot">
 
 We carefully balanced our groups, and as we can see from the results Group 1 and Group 2 are well-balanced, but Group 3, with fewer channels, is less ideal. Despite the limitations in Group 3, our analysis draws meaningful conclusions from the well-matched Group 1 and Group 2.
 
@@ -456,9 +456,9 @@ function showFrame5(frameId) {
 
 <!-- Create the buttons -->
 <div style="display: flex; justify-content: center; margin-bottom: 8px;">
-  <button onclick="showFrame5('id_1')">iPhone X</button>
-  <button onclick="showFrame5('id_2')">iPhone 7</button>
-  <button onclick="showFrame5('id_3')">Galaxy S9</button>
+  <button onclick="showFrame5('id_1_ts')">iPhone X</button>
+  <button onclick="showFrame5('id_2_ts')">iPhone 7</button>
+  <button onclick="showFrame5('id_3_ts')">Galaxy S9</button>
 </div>
 
 <!-- Create the iframes -->
