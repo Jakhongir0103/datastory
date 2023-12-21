@@ -25,7 +25,6 @@ We conducted our analysis by first putting together hypotheses of how a successf
 
 ### How to Attract Views with Your Video Titles:
 1. Does the sentiment of the title have an impact on the views of the video?
-2. General guidelines for a good video title
 
 ### Making the Most of Product Release Dates:
 1. Do product release events even matter to YouTubers?
@@ -115,10 +114,10 @@ As these tech channels jostle for attention in a crowded online space, specially
 
 As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie:
 
-- _0 - 10.000_  and  _10.000 - 50.000_   Very small YouTubers that often publish videos for fun and to their very small community.
-- _50.000 - 100.000_ and _100.000 - 500.000_: YouTubers that start to have sponsors , and thus some obligations to be regular as it's starting to take most of their time.
-- _500.000 - 1.000.000_ and _1.000.000 - 2.500.000_: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
-- _2.500.000 - 5.000.000_ and _more_: very few YouTubers, known worldwide and being a reference as tech channels.
+- _0 - 10,000_  and  _10,000 - 50,000_   Very small YouTubers that often publish videos for fun and to their very small community.
+- _50,000 - 100,000_ and _100,000 - 500,000_: YouTubers that start to have sponsors , and thus some obligations to be regular as it's starting to take most of their time.
+- _500,000 - 1.000,000_ and _1.000,000 - 2.500,000_: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
+- _2.500,000 - 5.000,000_ and _more_: very few YouTubers, known worldwide and being a reference as tech channels.
 
 Let's first see their repartitions in this pie chart:
 
@@ -337,6 +336,59 @@ There isn't a significant statistical difference in the number of subscribers an
 Among the successful channels covering a wide range of tech products, the ones that attract more viewers are Phones, Desktop setup, Laptop, and Headphones, in that order of importance. Successful channels often produce videos featuring a combination of Phones, Laptop, and Headphones.
 
 
+# Does the sentiment of the title have an impact on the views of the video?
+
+Here, we want to see the influence of titles sentiment on attracting the viewers. We choose the view count as our metric, as a title is intended to attract users to click on our video. 
+_But there is also the video's thumbnail, which we cannot take into consideration here and still may play an important role._
+
+First, we select the videos that got up to 100,000 views as we are targeting new/small channels. Then we select the top 10% as we want to analyse the characteristics of the best performing videos. To assess the "success" of a video, we also divide the number of views by the number of subscribers of the corresponding channels to remove the influence of the channel's popularity. Finally, this is the distribution of the sentiment of the titles calculated in 2 methods:
+
+<iframe src="assets/plot/2_1_distribution.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+
+Both methods indeed confirm that the density of the positive titles is higher compared to the negative ones, however we observe that most of the "top videos" have neutral titles. We, now, want to see the correlation between views and sentiment more statistically using an ols regression and come up with the following results:
+
+<div style="display: flex; justify-content: space-between;">
+
+$$ Y = 0.56 + 0.09 \cdot S_1 $$
+$$ Y = 0.55 + 0.18 \cdot S_2 $$
+
+</div>
+
+with the following likelihood: 
+
+<table>
+    <tr>
+        <th></th>
+        <th>Coefficient</th>
+        <th>P-value</th>
+    </tr>
+    <tr>
+        <td>Constant</td>
+        <td>0.56</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>S1</td>
+        <td>0.09</td>
+        <td>0.005</td>
+    </tr>
+    <tr>
+        <td>Constant</td>
+        <td>0.55</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>S2</td>
+        <td>0.18</td>
+        <td>0</td>
+    </tr>
+</table>
+
+where $Y$ is the ratio of the number of views of a video to the number of subscribers of the corresponding channel, $S_1$ and $S_2$ are the above 2 methods of calculating the sentiment respectively.
+
+In the first scenario, although the impact of positive sentiments on the average views isn't very large, it still matters because it is statistically significant (the likelihood of it happening by chance is less than 5%). Now, in the second case, things get more interesting. Not only is the influence of positive sentiments quite substantial, but it's also statistically significant. This implies that using positive language in titles can boost the number of views by up to a third compared to titles with neutral language. In simpler terms, having a positive title increases the likelihood of attracting more viewers.
+
+_However, it's important to understand that the observed correlation doesn't necessarily mean there's a direct cause-and-effect relationship. Another factor to consider is the video thumbnail, which could be influencing the results. Unfortunately, we don't have control over the thumbnail, and it might be acting as a confounding variable, affecting the relationship we see between positive sentiments in titles and increased views._
 
 ### Making the Most of Product Release Dates:
 1. Do product release events even matter to YouTubers?
