@@ -113,15 +113,12 @@ Putting it all together we can say that the best range for the duration of a vid
 # What should be the upload frequency?
 As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews , one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
 
-As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie.
+As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie:
 
-[0:10000]  and  [10 000:50 000]   Very small YouTubers that often publish videos for fun and to their very small community.
-
-[50 000 : 100 000] and [100 000 : 500 000]: YouTubers that start to have sponsors , and thus some obligations to be regular as it's starting to take most of their time.
-
-[500 000: 1 000 000] and [1 000 000 : 2 500 000]: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
-
-[2 500 000: 5 000 000] and 5 000 000 + , very few YouTubers, known worldwide and being a reference as tech channels.
+- _0 - 10.000_  and  _10.000 - 50.000_   Very small YouTubers that often publish videos for fun and to their very small community.
+- _50.000 - 100.000_ and _100.000 - 500.000_: YouTubers that start to have sponsors , and thus some obligations to be regular as it's starting to take most of their time.
+- _500.000 - 1.000.000_ and _1.000.000 - 2.500.000_: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
+- _2.500.000 - 5.000.000_ and _more_: very few YouTubers, known worldwide and being a reference as tech channels.
 
 Let's first see their repartitions in this pie chart:
 
@@ -129,21 +126,21 @@ Let's first see their repartitions in this pie chart:
 
 We can remark that more than half of them are small YouTubers, that almost a fifth are mid-range YouTubers, and that only around 6% of them are famous and have more than 500k subscribers. Our question then is , do you upload more frequency when you are famous? And more specifically, is the category in which you lie impacts your regularity?
 
-And to perform this analysis , let's define a metric that will help us to measure this regularity :
+To perform this analysis, we define the __regularity__ in the following way:
 
-let n be the number of videos uploaded within a month for some YouTubers.
+$$
+\text{regularity} = n \cdot \log(1 + \frac{1}{\text{std}(f)})
+$$
+where $\text{n}$ is the number of videos uploaded within a month for a YouTuber, and $\text{f}$ = $\frac{1}{\text{delay}}$ where $\text{delay}$ is time in days between 2 consecutive videos.
 
-let f be the 1/delay between 2 consecutive videos
 
-regularity = n * log (1 + 1/std(f)) 
-
-This metric evaluates not just the frequency of video uploads on tech channels but also the consistency of their posting schedule. Channels that maintain a regular interval between video uploads gain a distinct advantage, highlighting the importance of a steady content rhythm. In contrast, channels with erratic schedules—such as releasing multiple videos on a single day followed by a prolonged period of inactivity—are less favored by this metric. Thus, while the overall quantity of content remains a key factor, the regularity and predictability of uploads emerge as crucial elements in driving channel growth.
+This metric evaluates not just the frequency of video uploads on tech channels but also the consistency of their posting schedule. Channels that maintain a regular interval between video uploads gain a distinct advantage, highlighting the importance of a steady content rhythm. In contrast, channels with erratic schedules-such as releasing multiple videos on a single day followed by a prolonged period of inactivity—are less favored by this metric. Thus, while the overall quantity of content remains a key factor, the regularity and predictability of uploads emerge as crucial elements in driving channel growth.
 
 And that is what we observe in this plot:
 
 <iframe src="assets/plot/1_2_bars_1.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
-The main observation that we can do in this case, is that on average, the higher the category (and thus the number of subscribers), the higher the regularity is, and confidence intervals are not overlapping anywhere but in within the first two categories that represent relatively small youtubers.
+The main observation that we can do in this case, is that on average, the higher the category (and thus the number of subscribers), the higher the regularity is, and confidence intervals are not overlapping anywhere except within the first two categories that represent relatively small youtubers.
 
 Now, we want to plot the moving average regularity and channels' growth to see if we can spot some clear relation between them:
 
@@ -198,7 +195,7 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 <iframe src="assets/plot/1_2_bars_2.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
-From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups. Using the same time series comparison that we have done before. 
+From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups, using the same time series comparison that we have done before. 
 
 <script>
 function showFrame1(frameId) {
@@ -227,7 +224,7 @@ function showFrame1(frameId) {
 <iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">Regularity below 32</iframe>
 
 
-From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, the channel's growth rate is influenced by regularity only if it is sufficiently high; otherwise, other factors may have a greater impact on growth.
+From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, once they reach the regularity of above 32, they should try to sustain the pace of frequency, as slowing the frequency may result in a decrease in the growth as well, as they are closely related at that point.
 
 Additionally, when calculating the average number of videos per month for YouTubers who achieved a regularity of 32 or more, we find that this corresponds to nearly 33 videos per month, or about one video per day.
 
@@ -253,33 +250,91 @@ In this section, we are going to focus on the types of review products. More spe
   </tr>
 </table>
 
-Let's first see which product types are more common among the YouTubers, then we will answer the following sub-questions:
+Let's first see which product types are more common among the YouTubers:
 
-- What range of product types should be covered?
-- What product categories have higher influence on the channels growth?
-- Which product categories attract more viewers?
-
-**plots**
-
+<iframe src="assets/plot/1_3_timeseries.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
 As we can see, most channels tend to focus on phones. It just means phones are a common topic to focus on, but we still need to see (in the next sub-section) how it actually influences the channel's growth.
 
-Below, we analyze the effect of covering a wider range of products, on the number of subscribers, a narrow range of products. To ensure the accuracy of our analysis, and to remove the effect of any possible confounder, we first balance these 2 groups (wide, narrow) on some metrics, namely average duration of videos per channel, and the delay in time between publishing 2 sequential videos.
+Now, we will answer the following sub-questions:
+- What range of product types should YouTubers should review?
+- Which product categories have higher influence on the channels growth?
+- Which product categories attract more viewers?
 
+### What range of product types should YouTubers should review?
 
+Below, we analyze the effect of covering a wider range of products, on the number of subscribers, a narrow range of products. To ensure the accuracy of our analysis, and to remove the effect of any possible confounder, we have balanced these 2 groups (wide, narrow) on some metrics, namely average duration of videos per channel, and the delay in time between publishing 2 sequential videos. Having a balanced dataset, let's now see the density of these 2 groups across the number of subscribers and the total views metrics.
 
+<script>
+function showFrame3(frameId) {
+  // Get all iframes with the regularity_range class
+  var frames = document.getElementsByClassName('1_3_dist');
 
+  // Hide all iframes with the regularity_range class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
 
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
 
+<!-- Create the dropdown menu -->
+<select onchange="showFrame3(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+  <option value="id_1" selected>Subscribers</option>
+  <option value="id_2">Views</option>
+</select>
 
+<!-- Create the iframes -->
+<iframe class="1_3_dist" src="assets/plot/1_3_distribution_susb.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: block;">Subscribers</iframe>
+<iframe class="1_3_dist" src="assets/plot/1_3_distribution_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">Views</iframe>
 
+From the above distribution of 'narrow' and 'wide' channels, we can see that non of the 2 groups is clearly outperforming the other. We can also confirm it more statistically. In fact, when we compute the statistical difference between them we get the following results:
 
+<table align="center">
+  <tr>
+    <td></td>
+    <td># Subscribers</td>
+    <td># Views</td>
+  </tr>
+  <tr>
+    <td>pvalue</td>
+    <td align="center">0.65</td>
+    <td align="center">0.88</td>
+  </tr>
+</table>
 
+Being both pvalues larger than 0.05, it further confirms that whether or not a channel focuses on a single product review, or covers a wider range of products, it does not have a direct influence on the growth of the channel, i.e. number of subscribers/views.
 
+### Which product categores have higher influence on the channels growth?
 
+Ok, we found out that it is all up to us whether to focus on a single product or cover a wider range. Now the question is which products combination I can go with if I choose to cover several product types. To answer this question, here, we only fitler the top channels that focus on wider range of product types and see which ones of the product categories usually go together and bring them more views. For doing that we can make use of graphs for the sake of visualization as follows:
 
+<img src="assets/plot/1_3_network.png" width="750px" height="400px" style="display: block; margin: 0 auto;" alt="Plot">
 
+We can read the above graph as follows:
 
+- nodes - product categories
+- nodes size - average number of views of that category
+- edge color - number of channels that have uploaded both of the corresponding products
+
+By doing that we can see that the videos about _phones_, _headphones_ and _laptops_ have stronger bond compared to the other pairs, meaning most of the successful channels tend to cover the combination of these products.
+
+### Which product categories attract more viewers?
+Now, we know the secret combination of the tech products, but does that mean these are the only 3 products that go successful? Let's find it out!
+
+For each video uploaded, let's get the ratio of the number of views of the video to the total number of views of the channel at the time of release of the video. Then, we want to see if any one of the products have a clearly higher ratio of views compared to the others. The reason why we are diving the number of views by the total number of views of the channel at the time of the release is to remove the influence of the current popularity of the channel.
+
+<iframe src="assets/plot/1_3_bars.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+
+Here, we can see that no single product is totally outperforming the other. However it is worth mentioning that the _phones_ tend to attract more viewers compared to the _camera_ and _smart watches_.
+
+In summary, we can draw the following conclusions:
+
+There isn't a significant statistical difference in the number of subscribers and total views between channels focusing on specific tech products and those covering a broader range. This implies that the diversity of reviewed product types doesn't noticeably impact the growth of the channels.
+Among the successful channels covering a wide range of tech products, the ones that attract more viewers are Phones, Desktop setup, Laptop, and Headphones, in that order of importance. Successful channels often produce videos featuring a combination of Phones, Laptop, and Headphones.
 
 
 
