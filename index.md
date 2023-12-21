@@ -193,6 +193,33 @@ function showFrame(frameId) {
 
 
 
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
+
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+  <option value="positive">Positive</option>
+  <option value="negative">Negative</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">negative barplot</iframe>
+
+
 From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, the channel's growth rate is influenced by regularity only if it is sufficiently high; otherwise, other factors may have a greater impact on growth.
 
 Additionally, when calculating the average number of videos per month for YouTubers who achieved a regularity of 32 or more, we find that this corresponds to nearly 33 videos per month, or about one video per day.
