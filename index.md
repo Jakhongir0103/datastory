@@ -32,23 +32,6 @@ We conducted our analysis by first putting together hypotheses of how a successf
 2. What are the topics discussed pre/during/post release?
 
 
-`tyr dynamic plots`
-#### with iframe
-
-<!-- save the html file with:
-fig.update_layout(width=700, height=500) -->
-<iframe src="assets/plot/output_plot.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
-
-# The rest of the blog
-
-
-
-
-
-
-
-
-
 
 # What should be the duratio of your videos?
 
