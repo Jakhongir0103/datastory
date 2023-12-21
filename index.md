@@ -18,19 +18,17 @@ We conducted our analysis by first putting together hypotheses of how a successf
 
 ## The Blog is Structured in the Following Way:
 
-### Characteristics of a Successful Tech Channel:
-1. What should be the duration of your videos?
-2. What should be the upload frequency?
-3. How does the review product type influence the channels' growth?
+#### Characteristics of Successful Tech Channels:
+1. What is the ideal video duration for maximizing engagement?
+2. How often should you release new content to optimize channel growth?
+3. What impact does the type of reviewed product have on the growth of the channels?
 
-### How to Attract Views with Your Video Titles:
-1. Does the sentiment of the title have an impact on the views of the video?
+#### Optimizing Viewership Through Video Titles:
+1. Can the sentiment in your video title affect its view count?
 
-### Making the Most of Product Release Dates:
-1. Do product release events even matter to YouTubers?
-2. What are the topics discussed pre/during/post release?
-
-
+#### Making the Most out of Product Release Dates:
+1. Do product launch events significantly impact YouTubers?
+2. What key topics should be addressed before, during, and after a product release?
 
 # What should be the duratio of your videos?
 
@@ -109,7 +107,7 @@ As we can see from above, the videos between 20 and 60 minutes which account for
 Putting it all together we can say that the best range for the duration of a video is between 16 min and 2.7 hours, however longer videos are usually meant for live videos from conferences. The main takeaway here is that we certainly want to avoid having really short videos in order to provide meaningful content to viewers and also avoid having really long videos so that we avoid boring them!
 
 
-# What should be the upload frequency?
+# How frequently should you upload?
 As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews , one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
 
 As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie:
@@ -222,7 +220,6 @@ function showFrame1(frameId) {
 <iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">Regularity above 32</iframe>
 <iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">Regularity below 32</iframe>
 
-
 From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, once they reach the regularity of above 32, they should try to sustain the pace of frequency, as slowing the frequency may result in a decrease in the growth as well, as they are closely related at that point.
 
 Additionally, when calculating the average number of videos per month for YouTubers who achieved a regularity of 32 or more, we find that this corresponds to nearly 33 videos per month, or about one video per day.
@@ -231,23 +228,22 @@ The main conclusion for this question is that, in general, high regularity (i.e.
 
 However, if you are a YouTuber with 500k to 1M subscribers and have chosen to maintain high regularity to accelerate growth, it's important to note that you should sustain this pace to preserve this growth rate, as reducing the frequency will likely lead to a decreased growth rate.
 
+# What impact does the type of reviewed product have on the growth of the channels?
 
-# How does the review product type influence the channels' growth?
+In this section, we are going to focus on the types of review products. More specifically, we want to understand what types of tech products have a higher influence to the growth of our channel, or does it even matter at all? We take the following 7 video types and see their effect:
 
-
-In this section, we are going to focus on the types of review products. More specifically, we want to understand what types of tech products have a higher influence to the growth of our channel, or does it even matter at all? We take the following 7 product types and see their effect:
-
-<table style="border: 1px solid black;">
+<table style="border: 1px solid black; width: 100%; text-align: center;">
   <tr>
-    <td>Laptop</td>
-    <td>Phone</td>
-    <td>Camera</td>
-    <td>Headphone</td>
-    <td>Smart Watch</td>
-    <td>Tablet</td>
-    <td>Desktop Setup</td>
+    <td style="width: 14.28%; text-align: center;">Laptop</td>
+    <td style="width: 14.28%; text-align: center;">Phone</td>
+    <td style="width: 14.28%; text-align: center;">Camera</td>
+    <td style="width: 14.28%; text-align: center;">Headphone</td>
+    <td style="width: 14.28%; text-align: center;">Smart Watch</td>
+    <td style="width: 14.28%; text-align: center;">Tablet</td>
+    <td style="width: 14.28%; text-align: center;">Desktop Setup</td>
   </tr>
 </table>
+
 
 Let's first see which product types are more common among the YouTubers:
 
@@ -292,18 +288,20 @@ function showFrame3(frameId) {
 
 From the above distribution of 'narrow' and 'wide' channels, we can see that non of the 2 groups is clearly outperforming the other. We can also confirm it more statistically. In fact, when we compute the statistical difference between them we get the following results:
 
-<table align="center">
+
+<table style="border: 1px solid black; width: 50%; text-align: center;margin-left: auto; margin-right: auto;">
   <tr>
-    <td></td>
-    <td># Subscribers</td>
-    <td># Views</td>
+    <th></th>
+    <th style="text-align: center;"># Subscribers</th>
+    <th style="text-align: center;"># Views</th>
   </tr>
   <tr>
-    <td>pvalue</td>
-    <td align="center">0.65</td>
-    <td align="center">0.88</td>
+    <td>P-value</td>
+    <td style="text-align: center;">0.65</td>
+    <td style="text-align: center;">0.88</td>
   </tr>
 </table>
+
 
 Being both pvalues larger than 0.05, it further confirms that whether or not a channel focuses on a single product review, or covers a wider range of products, it does not have a direct influence on the growth of the channel, i.e. number of subscribers/views.
 
@@ -331,15 +329,13 @@ For each video uploaded, let's get the ratio of the number of views of the video
 Here, we can see that no single product is totally outperforming the other. However it is worth mentioning that the _phones_ tend to attract more viewers compared to the _camera_ and _smart watches_.
 
 In summary, we can draw the following conclusions:
-
 There isn't a significant statistical difference in the number of subscribers and total views between channels focusing on specific tech products and those covering a broader range. This implies that the diversity of reviewed product types doesn't noticeably impact the growth of the channels.
 Among the successful channels covering a wide range of tech products, the ones that attract more viewers are Phones, Desktop setup, Laptop, and Headphones, in that order of importance. Successful channels often produce videos featuring a combination of Phones, Laptop, and Headphones.
 
 
 # Does the sentiment of the title have an impact on the views of the video?
 
-Here, we want to see the influence of titles sentiment on attracting the viewers. We choose the view count as our metric, as a title is intended to attract users to click on our video. 
-_But there is also the video's thumbnail, which we cannot take into consideration here and still may play an important role._
+Here, we want to see the influence of titles sentiment on attracting the viewers. We choose the number of views as our metric, as a title is intended to attract users to click on our video.
 
 First, we select the videos that got up to 100,000 views as we are targeting new/small channels. Then we select the top 10% as we want to analyse the characteristics of the best performing videos. To assess the "success" of a video, we also divide the number of views by the number of subscribers of the corresponding channels to remove the influence of the channel's popularity. Finally, this is the distribution of the sentiment of the titles calculated in 2 methods:
 
@@ -356,31 +352,31 @@ $$ Y = 0.55 + 0.18 \cdot S_2 $$
 
 with the following likelihood: 
 
-<table>
+<table style="border: 1px solid black; width: 50%; text-align: center;margin-left: auto; margin-right: auto;">
     <tr>
         <th></th>
-        <th>Coefficient</th>
-        <th>P-value</th>
+        <th style="text-align: center;">Coefficient</th>
+        <th style="text-align: center;">P-value</th>
     </tr>
     <tr>
-        <td>Constant</td>
-        <td>0.56</td>
-        <td>0</td>
+        <td style="text-align: center;">Constant</td>
+        <td style="text-align: center;">0.56</td>
+        <td style="text-align: center;">0</td>
     </tr>
     <tr>
-        <td>S1</td>
-        <td>0.09</td>
-        <td>0.005</td>
+        <td style="text-align: center;">S1</td>
+        <td style="text-align: center;">0.09</td>
+        <td style="text-align: center;">0.005</td>
     </tr>
     <tr>
-        <td>Constant</td>
-        <td>0.55</td>
-        <td>0</td>
+        <td style="text-align: center;">Constant</td>
+        <td style="text-align: center;">0.55</td>
+        <td style="text-align: center;">0</td>
     </tr>
     <tr>
-        <td>S2</td>
-        <td>0.18</td>
-        <td>0</td>
+        <td style="text-align: center;">S2</td>
+        <td style="text-align: center;">0.18</td>
+        <td style="text-align: center;">0</td>
     </tr>
 </table>
 
@@ -390,58 +386,224 @@ In the first scenario, although the impact of positive sentiments on the average
 
 _However, it's important to understand that the observed correlation doesn't necessarily mean there's a direct cause-and-effect relationship. Another factor to consider is the video thumbnail, which could be influencing the results. Unfortunately, we don't have control over the thumbnail, and it might be acting as a confounding variable, affecting the relationship we see between positive sentiments in titles and increased views._
 
-### Making the Most of Product Release Dates:
-1. Do product release events even matter to YouTubers?
-We look at the influence of a release event on the success of a channel that talks about it. Does talking about the release of a tech product boost the number of its views and subscribers? What is the effect of publishing a video about a specific product during the period of its release on the growth of the channel? To this end, we focus on 3 items: iPhone x, iPhone 7, and Galaxy s9. We split the tech channels into 2 categories: one that does talk about the release (the “treat channels”)  and one that doesn’t ( the “control channels”). We compare the trends of the channel’s growth over one year ( 6 months before and after the release). Moreover, for each item, when considering the channels that talk about its release, we divide these channels into 3 groups: channels that have between 1 and 10 videos that talk about it, others with a number between 11 and 50, and a last one with the channels that contain more than 50 videos.
+# Do product launch events significantly impact YouTubers?
 
-Before doing the comparison between 2 groups, we first want to balance these groups on the number of subscribers, frequency of uploading a video, and the ratio of tech review videos, because these features (especially the number of subscribers and tech video ratio) might be a confounder of the growth of the channel.
+We're exploring whether discussing the launch of a tech product on a channel affects its popularity. Does creating content around the release of a tech gadget increase the number of views and subscribers? How does making videos about a specific product during its launch period impact the overall growth of a channel? For our investigation, we've chosen three items: 
 
-After doing the balancing, we observed that only the groups with less than 10 videos and the ones with more than 10 but less than 50 were relevant four our analysis as the number of channels with a higher number of videos was too small. So, we focused on these 2 groups only.
-###plots
+<table style="border: 1px solid black; width: 100%; text-align: center;">
+  <tr>
+    <td style="width: 33.3%; text-align: center;">iPhone X</td>
+    <td style="width: 33.3%; text-align: center;">iPhone 7</td>
+    <td style="width: 33.3%; text-align: center;">Galaxy S9</td>
+  </tr>
+</table>
 
-The green line corresponds to the release date whereas the 2 red lines define our  “window of interest “ ( 6 months before/after the event).
+We've categorized tech channels into two groups: those that discuss product releases and those that don't. To assess the trends in channel growth, we're comparing data over one year, examining the six months before and after each product release. Additionally, for each item, among the channels discussing its release, we've further divided them into three groups based on the number of videos they have related to the product: channels with 1 to 10 videos, those with 11 to 50 videos, and those with more than 50 videos. This approach allows us to analyze how different levels of content creation about a product release correlate with channel growth.
 
-iPhone x :
+So here is the division structure to keep it visual:
 
-As for iPhone X, we see that the channels that have produced a video about it during the 6 months of its release have seen some increase in the growth of the channel (ratio of new subs/view to the total subs/view), while for the other channels, they did not have any dramatic change in their trend. We see this difference in the increase of the trend more clearly especially for the channels that have produced between 1-50 videos, because the number of other channels is too few that we cannot see any increase that clearly (even though we see that it increased on the date of release).
+<img src="assets/plot/3_1_structure.jpg" width="350" height="150" style="display: block; margin: 0 auto;" alt="Plot">
 
-So, let's focus mostly on the channels in Groups 1 and 2:
+Before we compare two groups, we want to make sure they are fair and balanced. We're looking at factors like the number of subscribers, how often videos are uploaded, and the proportion of tech review videos in each group. This is important because things like the number of subscribers and the ratio of tech videos could potentially influence the channel's growth, and we want to account for that.
 
-iPhone 7 : 
+<script>
+function showFrame4(frameId) {
+  // Get all iframes with the 3_1_balance class
+  var frames = document.getElementsByClassName('3_1_balance');
 
-We see an interesting trend in Group 2 of iPhone 7, namely the trend is increasing for both channels. Let's dig deeper into this. We wanted to see what the videos were mostly about.
+  // Hide all iframes with the 3_1_balance class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
 
-Apparently, during this time we had many videos about other tech by Xiaomi and Samsung as well. Indeed, below we list the release dates of other phones by Samsung and Xiaomi, of which the release date overlaps with the period we are interested in: 
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
 
-| Phone Name | Release Date | |-------------------------------|-------------------| | Redmi Note 4G | June 15, 2016 | | Redmi Note 4X | August 29, 2016 | | Redmi Note 3 Pro Prime | October 17, 2016 | | Redmi Note 3 | February 10, 2016 | | Xiaomi Redmi 3S Prime | October 17, 2016 | | Xiaomi Redmi 3S | June 16, 2016 | | Xiaomi Redmi 4 | August 24, 2016 | | Xiaomi Mi 5s | September 22, 2016| | Xiaomi Mi 5s Plus | September 22, 2016| | Xiaomi Redmi Note 4 Plus | August 29, 2016 | | Samsung Galaxy A5 (2016) | June 17, 2016 | | Samsung Galaxy J5 (2016) | June 22, 2016 | | Samsung Galaxy J7 (2016) | June 22, 2016 | | Samsung Galaxy Grand Prime Plus| July 27, 2016 | | Samsung Galaxy C5 Pro | August 20, 2016 | | Samsung Galaxy J7 Nxt | October 21, 2016 | | Samsung Galaxy C7 Pro | November 8, 2016 | | Samsung Galaxy A7 (2016) | November 13, 2016 |
+<!-- Create the buttons -->
+<div style="display: flex; justify-content: center; margin-bottom: 8px;">
+  <button onclick="showFrame4('id_1')">iPhone X</button>
+  <button onclick="showFrame4('id_2')">iPhone 7</button>
+  <button onclick="showFrame4('id_3')">Galaxy S9</button>
+</div>
 
-Galaxy s9 :
+<!-- Create the images -->
+<img class="3_1_balance" src="assets/plot/3_1_balance_1.png" width="600" height="400" style="display: block; margin: 0 auto; margin-bottom: 8px" id="id_1" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_2.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_2" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_3.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_3" alt="Plot">
 
-Let us now try other groups as well. For example, 2nd Group of Galaxy s9:
+We carefully balanced our groups, and as we can see from the results Group 1 and Group 2 are well-balanced, but Group 3, with fewer channels, is less ideal. Despite the limitations in Group 3, our analysis draws meaningful conclusions from the well-matched Group 1 and Group 2.
 
-Indeed we again see a similar result for this group as well, namely, these are the products (other than Galaxy s9) that were released by Samsung and Xiaomi during the period of our analysis:
+Now, we're exploring how the monthly _Growth Rate_ of new subscribers compares to the total number of subscribers over a one-year span (more specifically defined as $ \frac{\text{\# monthly new subscribers}}{\text{\# total subscribers}} $). We're looking at a period that spans 3 months before and after our analysis perdiod, totaling 1 year around the product release date.
 
-Phone Name	Release Date
-Redmi Note 5A	December 22, 2017
-Redmi Note 5A Prime	January 24, 2018
-Redmi Note 5	February 14, 2018
-Redmi Note 5 Pro	March 15, 2018
-Redmi 6 Pro	April 20, 2018
-Redmi 6A	May 22, 2018
-Redmi S2	May 25, 2018
-Xiaomi Mi 8	May 29, 2018
-Xiaomi Mi 8 Pro	May 29, 2018
-Samsung Galaxy J7 Nxt	March 29, 2018
-Samsung Galaxy A8 (2018)	April 20, 2018
-Samsung Galaxy J6+	May 30, 2018
-Samsung Galaxy J4+	May 30, 2018
-Samsung Galaxy A8+ (2018)	May 31, 2018
+<script>
+function showFrame5(frameId) {
+  // Get all iframes with the 3_1_timeseries class
+  var frames = document.getElementsByClassName('3_1_timeseries');
 
-General  conclusion:
+  // Hide all iframes with the 3_1_timeseries class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
 
-From all the observations above, our conclusion can be that when focusing on a particular item, we can have one of the 2 following scenarios : 
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
 
-- either there is a clear gain for the treat channels in terms of the number of views and subscribers such that the orange curve is above the blue one inside the window between the 2 red lines whereas it is generally below it outside.
-- either no gain appears. In this case, after doing some more investigations, it seems that this could be explained by the fact that the release of the considered item overlaps with other items' releases, which the control channels talk about, in such a way that the gains of treat channels are still "inferior" to the one of the control ones (the effect of the release of the considered item is "hidden" by the release of other items, released at the same time).
+<!-- Create the buttons -->
+<div style="display: flex; justify-content: center; margin-bottom: 8px;">
+  <button onclick="showFrame5('id_1')">iPhone X</button>
+  <button onclick="showFrame5('id_2')">iPhone 7</button>
+  <button onclick="showFrame5('id_3')">Galaxy S9</button>
+</div>
 
-Moreover, increasing the number of videos on a channel that talks about the release is not a good way to make it succeed. The channel does better have to talk about it in a small number of videos.
+<!-- Create the iframes -->
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_x.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: block;">Subscribers</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_7.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">Views</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_galaxy_s9.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3" style="display: none;">Views</iframe>
+
+_where the green line marks the day a product is released. Alongside it, two red lines span a six-month stretch. This is the perdiod during which if a channel talked about the product, we consider it "discussed";_
+
+Talking about the iPhone X, we observed that channels creating videos about it in the six-month period experienced some growth in their channel's _Growth Rate_. Conversely, channels that didn't discuss it didn't show any major changes in their trend. This difference is more noticeable, especially among channels with 1-50 videos about the iPhone X. Regarding the 3rd Group, we did notice a slight spark, but we can't rely heavily on this group due to the very few number of channels in it.
+
+_So, let's focus mostly on the channels in Groups 1 and 2._
+
+Something interesting is happening in Group 2 of where the iPhone 7 – both channels are increasing. Let's explore this further. We got even more curious and decided to uncover what these videos are really about.
+
+<img src="assets/plot/3_1_100_words_1.png" width="600" height="250" style="display: block; margin: 0 auto;" alt="Plot">
+
+Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit the market during this time!
+
+<table style="border: 1px solid black; width: 70%; text-align: center; margin-left: auto; margin-right: auto;">
+    <tr>
+        <th style="text-align: center;">Phone Name</th>
+        <th style="text-align: center;">Release Date</th>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Redmi Note 4G</td>
+        <td style="text-align: center;">June 15, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Redmi Note 4X</td>
+        <td style="text-align: center;">August 29, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Redmi Note 3 Pro Prime</td>
+        <td style="text-align: center;">October 17, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Redmi Note 3</td>
+        <td style="text-align: center;">February 10, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Redmi 3S Prime</td>
+        <td style="text-align: center;">October 17, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Redmi 3S</td>
+        <td style="text-align: center;">June 16, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Redmi 4</td>
+        <td style="text-align: center;">August 24, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Mi 5s</td>
+        <td style="text-align: center;">September 22, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Mi 5s Plus</td>
+        <td style="text-align: center;">September 22, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Redmi Note 4 Plus</td>
+        <td style="text-align: center;">August 29, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy A5 (2016)</td>
+        <td style="text-align: center;">June 17, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy J5 (2016)</td>
+        <td style="text-align: center;">June 22, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy J7 (2016)</td>
+        <td style="text-align: center;">June 22, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy Grand Prime Plus</td>
+        <td style="text-align: center;">July 27, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy C5 Pro</td>
+        <td style="text-align: center;">August 20, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy J7 Nxt</td>
+        <td style="text-align: center;">October 21, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy C7 Pro</td>
+        <td style="text-align: center;">November 8, 2016</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy A7 (2016)</td>
+        <td style="text-align: center;">November 13, 2016</td>
+    </tr>
+</table>
+
+Ah, now it makes sense! Turns out, there were lots of videos about other cool tech stuff during this period, i.e. from Xiaomi and Samsung. That's why even the channels that didn't talk about the iPhone 7 release saw an increase in their overall growth. It's like everyone was buzzing about tech goodness! 
+
+But is it only for iPhone 7? Let's us give it a check and do the same analysis for the 2nd Group of Galaxy S9 as well, for example. Let's see what the videos were mostly about:
+
+<img src="assets/plot/3_1_100_words_2.png" width="600" height="250" style="display: block; margin: 0 auto;" alt="Plot">
+
+<table style="border: 1px solid black; width: 70%; text-align: center; margin-left: auto; margin-right: auto;">
+    <tr>
+        <th style="text-align: center;">Phone Name</th>
+        <th style="text-align: center;">Release Date</th>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy A8 (2018)</td>
+        <td style="text-align: center;">April 20, 2018</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy A8+ (2018)</td>
+        <td style="text-align: center;">May 31, 2018</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Samsung Galaxy J6+</td>
+        <td style="text-align: center;">May 30, 2018</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Mi 8</td>
+        <td style="text-align: center;">May 29, 2018</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">Xiaomi Mi 8 Pro</td>
+        <td style="text-align: center;">May 29, 2018</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">...</td>
+        <td style="text-align: center;">...</td>
+    </tr>
+</table>
+
+Indeed we again see a similar result for this group as well.
+
+In looking at all our findings, here's what we've figured out: When we focus on a specific product, we tend to see one of two things happening:
+
+- __Clear Gains:__ Some channels experience a noticeable increase in views and subscribers, showing an uptick in their trend rate between the two red lines. Meanwhile, the other group doesn't see the same boost.
+
+- __No Clear Gains:__ In some cases, there's no clear gain. After digging a bit deeper, it seems this happens when the release of the item we're focusing on overlaps with releases from other products that the control channels discuss. Both channels see a trend rate increase, but for different reasons—the impact of the considered item gets somewhat "hidden" amid the simultaneous release of other items.
+
+Moreover, we've noticed that the curves for the number of views and subscribers usually follow a similar shape within a given item, group, and type of channel.
+
+In a nutshell, it's not just the big tech brands like iPhone and Galaxy; it turns out most tech product releases create a golden opportunity to amp up channel growth by sharing videos about them.
+
+_Let's now turn our attention to the topics discussed in those videos at different time periods ..._
