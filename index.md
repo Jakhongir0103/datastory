@@ -278,13 +278,13 @@ function showFrame3(frameId) {
 
 <!-- Create the dropdown menu -->
 <select onchange="showFrame3(this.value)" style="margin: 8px 0; width: 20%;">
-  <option value="id_1" selected>Subscribers</option>
-  <option value="id_2">Views</option>
+  <option value="id_1_dist" selected>Subscribers</option>
+  <option value="id_2_dist">Views</option>
 </select>
 
 <!-- Create the iframes -->
-<iframe class="1_3_dist" src="assets/plot/1_3_distribution_susb.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: block;">Subscribers</iframe>
-<iframe class="1_3_dist" src="assets/plot/1_3_distribution_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">Views</iframe>
+<iframe class="1_3_dist" src="assets/plot/1_3_distribution_susb.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_dist" style="display: block;">Subscribers</iframe>
+<iframe class="1_3_dist" src="assets/plot/1_3_distribution_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_dist" style="display: none;">Views</iframe>
 
 From the above distribution of 'narrow' and 'wide' channels, we can see that non of the 2 groups is clearly outperforming the other. We can also confirm it more statistically. In fact, when we compute the statistical difference between them we get the following results:
 
@@ -402,7 +402,7 @@ We've categorized tech channels into two groups: those that discuss product rele
 
 So here is the division structure to keep it visual:
 
-<img src="assets/plot/3_1_structure.jpg" width="350" height="150" style="display: block; margin: 0 auto;" alt="Plot">
+<img src="assets/plot/3_1_structure.jpg" width="600" height="300" style="display: block; margin: 0 auto;" alt="Plot">
 
 Before we compare two groups, we want to make sure they are fair and balanced. We're looking at factors like the number of subscribers, how often videos are uploaded, and the proportion of tech review videos in each group. This is important because things like the number of subscribers and the ratio of tech videos could potentially influence the channel's growth, and we want to account for that.
 
@@ -424,15 +424,15 @@ function showFrame4(frameId) {
 
 <!-- Create the buttons -->
 <div style="display: flex; justify-content: center; margin-bottom: 8px;">
-  <button onclick="showFrame4('id_1')">iPhone X</button>
-  <button onclick="showFrame4('id_2')">iPhone 7</button>
-  <button onclick="showFrame4('id_3')">Galaxy S9</button>
+  <button onclick="showFrame4('id_1_bal')">iPhone X</button>
+  <button onclick="showFrame4('id_2_bal')">iPhone 7</button>
+  <button onclick="showFrame4('id_3_bal')">Galaxy S9</button>
 </div>
 
 <!-- Create the images -->
-<img class="3_1_balance" src="assets/plot/3_1_balance_1.png" width="600" height="400" style="display: block; margin: 0 auto; margin-bottom: 8px" id="id_1" alt="Plot">
-<img class="3_1_balance" src="assets/plot/3_1_balance_2.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_2" alt="Plot">
-<img class="3_1_balance" src="assets/plot/3_1_balance_3.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_3" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_1.png" width="600" height="400" style="display: block; margin: 0 auto; margin-bottom: 8px" id="id_1_bal" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_2.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_2_bal" alt="Plot">
+<img class="3_1_balance" src="assets/plot/3_1_balance_3.png" width="600" height="400" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_3_bal" alt="Plot">
 
 We carefully balanced our groups, and as we can see from the results Group 1 and Group 2 are well-balanced, but Group 3, with fewer channels, is less ideal. Despite the limitations in Group 3, our analysis draws meaningful conclusions from the well-matched Group 1 and Group 2.
 
@@ -462,9 +462,9 @@ function showFrame5(frameId) {
 </div>
 
 <!-- Create the iframes -->
-<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_x.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: block;">Subscribers</iframe>
-<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_7.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">Views</iframe>
-<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_galaxy_s9.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3" style="display: none;">Views</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_x.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_ts" style="display: block;">Subscribers</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_7.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_ts" style="display: none;">Views</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_galaxy_s9.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3_ts" style="display: none;">Views</iframe>
 
 _where the green line marks the day a product is released. Alongside it, two red lines span a six-month stretch. This is the perdiod during which if a channel talked about the product, we consider it "discussed";_
 
@@ -474,7 +474,7 @@ _So, let's focus mostly on the channels in Groups 1 and 2._
 
 Something interesting is happening in Group 2 of where the iPhone 7 – both channels are increasing. Let's explore this further. We got even more curious and decided to uncover what these videos are really about.
 
-<img src="assets/plot/3_1_100_words_1.png" width="600" height="250" style="display: block; margin: 0 auto;" alt="Plot">
+<img src="assets/plot/3_1_100_words_1.png" width="600" height="300" style="display: block; margin: 0 auto;" alt="Plot">
 
 Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit the market during this time!
 
@@ -561,7 +561,9 @@ Ah, now it makes sense! Turns out, there were lots of videos about other cool te
 
 But is it only for iPhone 7? Let's us give it a check and do the same analysis for the 2nd Group of Galaxy S9 as well, for example. Let's see what the videos were mostly about:
 
-<img src="assets/plot/3_1_100_words_2.png" width="600" height="250" style="display: block; margin: 0 auto;" alt="Plot">
+<img src="assets/plot/3_1_100_words_2.png" width="600" height="300" style="display: block; margin: 0 auto;" alt="Plot">
+
+and again these are the products released during our analysis period:
 
 <table style="border: 1px solid black; width: 70%; text-align: center; margin-left: auto; margin-right: auto;">
     <tr>
