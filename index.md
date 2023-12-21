@@ -147,7 +147,46 @@ The main observation that we can do in this case, is that on average, the higher
 
 Now, we want to plot the moving average regularity and channels' growth to see if we can spot some clear relation between them:
 
-<iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<!-- <iframe src="assets/plot/1_2_regularity_lines_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe> -->
+
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the regularity_all class
+  var frames = document.getElementsByClassName('regularity_all');
+
+  // Hide all iframes with the regularity_all class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+  <option value="1">0-10k Subscribers</option>
+  <option value="2">10k-50k Subscribers</option>
+  <option value="3">50k-100k Subscribers</option>
+  <option value="4">100k-500k Subscribers</option>
+  <option value="5">500k-1M Subscribers</option>
+  <option value="6">1M-2.5M Subscribers</option>
+  <option value="7">2.5M-5M Subscribers</option>
+  <option value="8">5M+ Subscribers</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="1" style="display: block;">0-10k Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="2" style="display: none;">10k-50k Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="3" style="display: block;">50k-100k Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="4" style="display: none;">100k-500k Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="5" style="display: block;">500k-1M Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="6" style="display: none;">1M-2.5M Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5<.html" width="750px" height="530px" frameborder="0" position="relative" id="7" style="display: block;">2.5M-5M Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="8" style="display: none;">5M+ Subscribers</iframe>
+
 
 Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
 
@@ -163,42 +202,14 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups. Using the same time series comparison that we have done before. 
 
-<iframe src="assets/plot/1_2_regularity_lines_range_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
-
-
-<script>
-function showFrame(frameId) {
-  // Get all iframes with the toggle-frame class
-  var frames = document.getElementsByClassName('toggle-frame');
-
-  // Hide all iframes with the toggle-frame class
-  for (var i = 0; i < frames.length; i++) {
-    frames[i].style.display = 'none';
-  }
-
-  // Show the selected iframe
-  var frame = document.getElementById(frameId);
-  frame.style.display = 'block';
-}
-</script>
-
-
-<!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('positive')">above 32</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('negative')">below 32</button>
-
-<!-- Create the iframes -->
-<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">above 32</iframe>
-<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">below 32</iframe>
-
-
+<!-- <iframe src="assets/plot/1_2_regularity_lines_range_all.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe> -->
 
 <script>
 function showFrame(frameId) {
-  // Get all iframes with the toggle-frame class
-  var frames = document.getElementsByClassName('toggle-frame');
+  // Get all iframes with the regularity_range class
+  var frames = document.getElementsByClassName('regularity_range');
 
-  // Hide all iframes with the toggle-frame class
+  // Hide all iframes with the regularity_range class
   for (var i = 0; i < frames.length; i++) {
     frames[i].style.display = 'none';
   }
@@ -211,13 +222,13 @@ function showFrame(frameId) {
 
 <!-- Create the dropdown menu -->
 <select onchange="showFrame(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
-  <option value="positive">Positive</option>
-  <option value="negative">Negative</option>
+  <option value="positive">Regularity above 32</option>
+  <option value="negative">Regularity below 32</option>
 </select>
 
 <!-- Create the iframes -->
-<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">negative barplot</iframe>
+<iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">Regularity above 32</iframe>
+<iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">Regularity below 32</iframe>
 
 
 From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, the channel's growth rate is influenced by regularity only if it is sufficiently high; otherwise, other factors may have a greater impact on growth.
