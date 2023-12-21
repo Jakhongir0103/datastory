@@ -52,7 +52,7 @@ We see from the above plots that both the number of dislikes and likes have been
 
 Let's now see how the video duration is related to user engagement. We do it by plotting the moving average of likes to dislikes ratio over the duration of a video.
 
-**plots**
+<iframe src="assets/plot/fig3.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
 Wow!! See that huge drop around 600 seconds =10 minutes?? Is it by sheer luck?? Let’s dig deeper into this.
 
