@@ -64,7 +64,7 @@ First we make sure that the drop is not caused by the “moving” nature of the
 
 Let’s try to focus only on the 10 minute videos.
 
-**plots**
+<iframe src="assets/plot/fig5.html" width="700px" height="270px" frameborder="0" position="relative">Plot</iframe>
 
 hmm, interesting?? This looks like a power law. Could the drop be caused by outliers? Let’s  plot the median instead of the mean.
 
