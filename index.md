@@ -161,7 +161,7 @@ function showFrame2(frameId) {
 </script>
 
 <!-- Create the dropdown menu -->
-<select onchange="showFrame2(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+<select onchange="showFrame2(this.value)" style="margin: 8px 0; width: 20%;">
   <option value="id_1">0-10k</option>
   <option value="id_2">10k-50k</option>
   <option value="id_3">50k-100k</option>
@@ -214,7 +214,7 @@ function showFrame1(frameId) {
 </script>
 
 <!-- Create the dropdown menu -->
-<select onchange="showFrame1(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+<select onchange="showFrame1(this.value)" style="margin: 8px 0; width: 20%;">
   <option value="positive" selected>Above 32</option>
   <option value="negative">Below 32</option>
 </select>
@@ -267,10 +267,10 @@ Below, we analyze the effect of covering a wider range of products, on the numbe
 
 <script>
 function showFrame3(frameId) {
-  // Get all iframes with the regularity_range class
+  // Get all iframes with the 1_3_dist class
   var frames = document.getElementsByClassName('1_3_dist');
 
-  // Hide all iframes with the regularity_range class
+  // Hide all iframes with the 1_3_dist class
   for (var i = 0; i < frames.length; i++) {
     frames[i].style.display = 'none';
   }
@@ -282,7 +282,7 @@ function showFrame3(frameId) {
 </script>
 
 <!-- Create the dropdown menu -->
-<select onchange="showFrame3(this.value)" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px">
+<select onchange="showFrame3(this.value)" style="margin: 8px 0; width: 20%;">
   <option value="id_1" selected>Subscribers</option>
   <option value="id_2">Views</option>
 </select>
