@@ -343,7 +343,7 @@ We can remark that more than half of them are small YouTubers, that almost a fif
 
 To perform this analysis, we define the __regularity__ in the following way:
 
-<div id="mathFormula">
+<div id="mathFormula" style="text-align: center; margin-left: auto; margin-right: auto;">
     \( \text{regularity} = n \cdot \log\left(1 + \frac{1}{\text{std}(f)}\right) \)
 </div>
 <p id="mathFormula">
@@ -696,7 +696,7 @@ function showFrame4(frameId) {
 We carefully balanced our groups, and as we can see from the results Group 1 and Group 2 are well-balanced, but Group 3, with fewer channels, is less ideal. Despite the limitations in Group 3, our analysis draws meaningful conclusions from the well-matched Group 1 and Group 2.
 
 <p id="mathFormula">
-    Now, we're exploring how the monthly _Growth Rate_ of new subscribers compares to the total number of subscribers over a one-year span (more specifically defined as $ \frac{\text{\# monthly new subscribers}}{\text{\# total subscribers}} $). We're looking at a period that spans 3 months before and after our analysis perdiod, totaling 1 year around the product release date.
+    Now, we're exploring how the monthly <i>Growth Rate</i> of new subscribers compares to the total number of subscribers over a one-year span (more specifically defined as $ \frac{\text{# monthly new subscribers}}{\text{# total subscribers}} $). We're looking at a period that spans 3 months before and after our analysis perdiod, totaling 1 year around the product release date.
 </p>
 
 <script>
