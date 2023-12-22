@@ -561,7 +561,7 @@ Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy A5 (2016)</td>
-        <td style="text-align: center;">December</td>
+        <td style="text-align: center;">December 2014</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy J5 (2016)</td>
