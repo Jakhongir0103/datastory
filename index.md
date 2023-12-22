@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Boost Your Tech Channel with Numbers-Backed Analysis 
+title: Boost Your Tech Channel with A Numbers-Backed Analysis 
 subtitle: by Salma Ed-Dahabi, Jakhongir Saydaliev, Zied Masmoudi, Ali Essonni, Othmane Oudghiri
 cover-img: /assets/img/ada_thumbnail.png
 thumbnail-img: /assets/img/ada_thumbnail.png
@@ -1060,3 +1060,14 @@ __Sentiment in Video Titles:__ Positive sentiments in video titles could be impo
 __Product Launch Events:__ Tech product releases, not just from big brands, provide a golden opportunity for channel growth. Discussing leaks and rumors before the launch builds excitement, and continuing coverage for a few months post-release is crucial to capture the broader audience's interest.
 
 In essence, the analysis guides content creators to strike the right balance in video duration, maintain consistency in uploads, explore a diverse range of tech products, use positive language in titles, and capitalize on the buzz around product launches for sustained channel growth.
+
+# Ethical discussion
+
+The dataset _Youniverse_ used for this analysis can be found on the _zenodo_ website. It contains english YouTube videos from 2005 to 2019 obtained from YouTube and two other thirdparty sources that aggregate YouTube metadata, through crawling and tracking; no labeling was required. This means that we are discriminataing other videos that are using other foreign languages. 
+We would like to note that this dataset contains no unsafe data; this is monitored by YouTube (if there was a violent video it would have been banned from YouTube). Futhermore, the text from the comments section was removed and users that commented were anonymized to preservetheir privacy. 
+However, we disclaim that de-anonymization of the data is possible through matching on a large number of videos where a user commented. Indeed, youtubers and normal users weren’t notified at the time of the data collection, however, first, viewers have been anonymized, second users agreed to the terms and conditions of YouTube before using the platform, allowing YouTube to collect private infomation to anlayse and offer a better user experiecne, third, youtubers publishing videos and viewers commenting on their videos are doing so publicly, and so the data was already there; it was just collected and the statistics shared are aggregates and not individually targeted.
+
+The dataset was further preprocessed to only keep tech review channles. We kept a large number of channels/videos in order to have a dataset that is more likely to be representative of the whole popultaion of tech review channels. However, one must always keep in mind that biases might be present due to the preprocessing procedure which might influence what channels/videos were kept, potentially over-representing certain groups/types of channels and under-representing others.
+This is why we want readers to take the results shown in this blog with a grain of salt; do not blindly follow the proposed guidelines, and leave room for innovation/exploration and taking risks. For example in our analysis we found out that videos between 16 min and 2.7 hours were the most plausible in order to provide useful content without boring viewers. However, lately YouTube announced YouTube shorts, which are super short videos (normally less than a minute) and these videos have been doing great and people were able to get insights from them.
+
+The sole goal of this analysis is to get insights about YouTube statistics for youtubers (and potentially for normal users who would like to know what the general trends on YouTube are). Yet this analysis get outdated very fast as once Youtube is crawled, we operate with static numbers, whereas the real numbers are fluctuating every day (videos considered are getting more or less likes, channels are getting more or less subscribers) and the dataset doesn’t take into consideration prior information to 2005 nor information after 2019. We also note that youtubers can delete their videos, channels, and viewers can remove their likes, dislikes or comments. However, even if youtubers, users do so, the data we use has already been collected and isn't influenced by this. This is why we again remind the reader to consider the insights shared with care.
