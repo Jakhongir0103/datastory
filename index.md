@@ -781,10 +781,6 @@ Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit
         <td style="text-align: center;">September 2016</td>
     </tr>
     <tr>
-        <td style="text-align: center;">Xiaomi Redmi Note 4 Plus</td>
-        <td style="text-align: center;">August 2016</td>
-    </tr>
-    <tr>
         <td style="text-align: center;">Samsung Galaxy A5 (2016)</td>
         <td style="text-align: center;">December 2014</td>
     </tr>
