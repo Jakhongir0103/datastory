@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  A Numbers-Backed Analysis to Rock Your YouTube Tech Channel
+title:  A Numbers-Backed Analysis to Boost Your YouTube Tech Channel
 subtitle: by Salma Ed-Dahabi, Jakhongir Saydaliev, Zied Masmoudi, Ali Essonni, Othmane Oudghiri
 cover-img: /assets/img/ada_thumbnail.png
 thumbnail-img: /assets/img/ada_thumbnail.png
