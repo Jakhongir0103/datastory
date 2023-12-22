@@ -343,9 +343,9 @@ We can remark that more than half of them are small YouTubers, that almost a fif
 
 To perform this analysis, we define the __regularity__ in the following way:
 
-$$
-\text{regularity} = n \cdot \log(1 + \frac{1}{\text{std}(f)})
-$$
+<div id="mathFormula">
+    \( \text{regularity} = n \cdot \log\left(1 + \frac{1}{\text{std}(f)}\right) \)
+</div>
 where $\text{n}$ is the number of videos uploaded within a month for a YouTuber, and $\text{f}$ = $\frac{1}{\text{delay}}$ where $\text{delay}$ is time in days between 2 consecutive videos.
 
 
