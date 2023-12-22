@@ -388,7 +388,43 @@ _However, it's important to understand that the observed correlation doesn't nec
 
 # Do product launch events significantly impact YouTubers?
 
-We're exploring whether discussing the launch of a tech product on a channel affects its popularity. Does creating content around the release of a tech gadget increase the number of views and subscribers? How does making videos about a specific product during its launch period impact the overall growth of a channel? For our investigation, we've chosen three items: 
+We're exploring whether discussing the launch of a tech product on a channel affects its popularity. Does creating content around the release of a tech gadget increase the number of views and subscribers? How does making videos about a specific product during its launch period impact the overall growth of a channel?
+
+To better realise the importance of our investigation, let’s take a closer look at the influence some product launch dates have on the YouTube platform. Below, we suggest some plots that show the ratio of views directly gathered by a specific product to the views on the whole of the YouTube tech community for each given day.
+
+<script>
+function showFrame6(frameId) {
+  // Get all iframes with the 3_2_rel class
+  var frames = document.getElementsByClassName('3_2_rel');
+
+  // Hide all iframes with the 3_2_rel class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame6(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_rel" selected>iPhone X</option>
+  <option value="id_2_rel">iPhone 6</option>
+  <option value="id_3_rel">Galaxy S9</option>
+</select>
+
+<!-- Create the images -->
+<img class="3_2_rel" src="assets/plot/3_2_releases_1.png" width="700" height="470" style="display: block; margin: 0 auto; margin-bottom: 8px" id="id_1_rel" alt="Plot">
+<img class="3_2_rel" src="assets/plot/3_2_releases_2.png" width="700" height="470" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_2_rel" alt="Plot">
+<img class="3_2_rel" src="assets/plot/3_2_releases_3.png" width="700" height="470" style="display: none; margin: 0 auto; margin-bottom: 8px" id="id_3_rel" alt="Plot">
+
+As you can see from the above histograms, tech giants certainly gain a lot of attention when there is a new release nearby, in fact we see that for the iPhone 6 and iPhone X, the ratio was almost of 0.8 meaning that 80% of the views during the release day of those specific products were directed towards videos about the iPhone 6 and X respectively.
+We also see that there are some moments where viewers show interest before the release of the product. It would be interesting to dig deeper into what topics are discussed during this period, which is what we do in the next section.
+We can thus sat that, since we see a massive interest in the products near their release date, it is in the youtuber’s advantage to discuss topics related to the product near its release date. Now let's prove this more analytically;
+
+For our investigation, we've chosen the following three items: 
 
 <table style="border: 1px solid black; width: 100%; text-align: center;">
   <tr>
@@ -609,3 +645,80 @@ Moreover, we've noticed that the curves for the number of views and subscribers 
 In a nutshell, it's not just the big tech brands like iPhone and Galaxy; it turns out most tech product releases create a golden opportunity to amp up channel growth by sharing videos about them.
 
 _Let's now turn our attention to the topics discussed in those videos at different time periods ..._
+
+# What key topics should be addressed before, during, and after a product release?
+
+Now that we have general guidelines about how to upload videos about a given tech product near its release date, we need to know what topics to discuss and when. The following section will answer this question. Now, let's see what are the topics discussed before and during the release period:
+
+<script>
+function showFrame7(frameId) {
+  // Get all iframes with the 3_2_lda class
+  var frames = document.getElementsByClassName('3_2_lda');
+
+  // Hide all iframes with the 3_2_lda class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame7(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_lda" selected>Before Release</option>
+  <option value="id_2_lda">During Release</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_lda" style="display: block;">Before Release</iframe>
+<iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_lda" style="display: none;">During Release</iframe>
+
+We notice that the content discussed before a product release is quite distinct from what's covered during the actual release.
+
+Before the big launch, videos tend to focus on:
+
+- Leaking information about the upcoming product, in this case, the iPhone X.
+- Unboxing of potential clones or prototype versions of the iPhone X.
+- Speculating about the possible features the iPhone X might have.
+
+Once the product is officially out, the videos shift gears and delve into:
+
+- Unboxing the real deal, the iPhone X itself.
+- Offering detailed reviews of the iPhone X.
+- Comparing the iPhone X with other smartphones on the market.
+- Testing various features of the iPhone X, such as the camera, screen, battery, and more.
+
+Now all of this is great, but we didn't really see how videos about those specific topics impacted the overall channel growth. Let's see the growth of those channels that were publishing videos in the pre-release period. We can measure it with trend rate 3 metrices: ratio of new subscribers to the total number of subscribers, ratio of new views to the total number of views, and the number of subscribers itself:
+
+<script>
+function showFrame8(frameId) {
+  // Get all iframes with the 3_2_timeseries class
+  var frames = document.getElementsByClassName('3_2_timeseries');
+
+  // Hide all iframes with the 3_2_timeseries class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame8(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_timeseries" selected>Subscribers</option>
+  <option value="id_2_timeseries">Ratio Subs</option>
+  <option value="id_3_timeseries">Ratio Views</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="3_2_timeseries" src="assets/plot/3_2_time_subs.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_timeseries" style="display: block;">Subscribers</iframe>
+<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_subs.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_timeseries" style="display: none;">Ratio Subs</iframe>
+<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3_timeseries" style="display: none;">Ratio Views</iframe>
+
+It's evident that the channels talking about a product before its release experience growth well before the actual launch. What's intriguing is that they not only attract subscribers leading up to the release but also manage to retain those subscribers even after the product hits the market. It's like building anticipation pays off in long-term support!
