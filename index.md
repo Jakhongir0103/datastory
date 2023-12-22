@@ -1049,7 +1049,7 @@ Absolutely! Surprisingly, even in February, those channels are still discussing 
 
 So, here's the takeaway: discussing leaks and rumors before a product release can be a great way to build up excitement leading to the launch. It seems like it has a positive effect on the channel's growth. What's even more crucial is to keep making videos about the product for a couple of months after it's released. This is because while a small niche might be eager for details before the launch, the broader audience usually becomes interested in the product only after it hits the market.
 
-# Putting it al together
+# Putting it all together
 
 Summing up our comprehensive analysis of YouTube tech channels, here are the key findings:
 
