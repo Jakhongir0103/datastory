@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Journey to Tech World
-subtitle: A Numbers-Backed Analysis to Rock Your YouTube Tech Channel
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/path.png
-share-img: /assets/img/path.jpg
+title:  A Numbers-Backed Analysis to Rock Your YouTube Tech Channel
+subtitle: by Salma Ed-Dahabi, Jakhongir Saydaliev, Zied Masmoudi, Ali Essonni, Othmane Oudghiri
+cover-img: /assets/img/ada_thumbnail.png
+thumbnail-img: /assets/img/ada_thumbnail.png
+share-img: /assets/img/ada_thumbnail.png
 use-site-title: true
 ---
 
@@ -16,9 +16,9 @@ All this is done through a very thorough analysis of the YouNiverse dataset, Lar
 
 We conducted our analysis by first putting together hypotheses of how a successful tech channel operates, then we (dis)proved each of the hypotheses so that after reading this post, you go out with general guidelines that will help you in your YouTube journey.
 
-## The Blog is Structured in the Following Way:
+## The Blog is structured in the following way:
 
-#### Characteristics of Successful Tech Channels:
+#### Characteristics of successful Tech channels:
 1. What is the ideal video duration for maximizing engagement?
 2. How often should you release new content to optimize channel growth?
 3. What impact does the type of reviewed product have on the growth of the channels?
@@ -30,7 +30,7 @@ We conducted our analysis by first putting together hypotheses of how a successf
 1. Do product launch events significantly impact YouTubers?
 2. What key topics should be addressed before, during, and after a product release?
 
-# What should be the duratio of your videos?
+# What should the duration of your videos be?
 
 Have you ever wondered how the trend of a YouTube video’s length evolves through time? Does it have anything to do with the success of the video? And if we want to upload a video of what duration should it be? We try to get some insights on these questions by analyzing video durations.
 
@@ -46,13 +46,13 @@ There is a relatively high positive correlation (that is decreasing across the y
 
 Let's now see the trend of likes, dislikes, and duration over the years to take their evolution into consideration.
 
-**plots**
+<iframe src="assets/plot/fig2.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
 We see from the above plots that both the number of dislikes and likes have been increasing across the years, potentially due to more users on the platform or more user engagement. We particularly note that the rate of increase of the number of likes is much higher than the one of dislikes as shown by the increasing ratio of like/dislike. This combined with the fact that the length of YouTube videos has been increasing over the years explains why we had higher correlation between duration and likes than we had with dislikes.
 
 Let's now see how the video duration is related to user engagement. We do it by plotting the moving average of likes to dislikes ratio over the duration of a video.
 
-**plots**
+<iframe src="assets/plot/fig3.html" width="700px" height="350px" frameborder="0" position="relative">Plot</iframe>
 
 Wow!! See that huge drop around 600 seconds =10 minutes?? Is it by sheer luck?? Let’s dig deeper into this.
 
@@ -64,7 +64,7 @@ First we make sure that the drop is not caused by the “moving” nature of the
 
 Let’s try to focus only on the 10 minute videos.
 
-**plots**
+<iframe src="assets/plot/fig5.html" width="800px" height="710px" frameborder="0" position="relative">Plot</iframe>
 
 hmm, interesting?? This looks like a power law. Could the drop be caused by outliers? Let’s  plot the median instead of the mean.
 
