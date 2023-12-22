@@ -58,7 +58,7 @@ Wow!! See that huge drop around 600 seconds =10 minutes?? Is it by sheer luck?? 
 
 Our hypothesis is that the drop could be caused by an enormous number of 10min videos on YouTube that contain low quality content, as youtubers usually try to produce videos around this duration to benefit from more ads on their videos (YouTube has a video length threshold of 10 min past which youtubers get 2 ads on their videos and thus more money). Let’s try to prove this.
 
-**plots**
+<iframe src="assets/plot/fig99.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
 
 First we make sure that the drop is not caused by the “moving” nature of the average. Indeed, we see that even by plotting the mean for each time interval (not 'moving') the drop is still there. Also, we notice that the number of likes decreased but the number of dislikes and number of videos stayed the same between the 10 min interval and the interval before it.
 
