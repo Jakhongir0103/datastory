@@ -521,19 +521,19 @@ Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit
     </tr>
     <tr>
         <td style="text-align: center;">Redmi Note 4G</td>
-        <td style="text-align: center;">June 15, 2016</td>
+        <td style="text-align: center;">August,2014</td>
     </tr>
     <tr>
         <td style="text-align: center;">Redmi Note 4X</td>
-        <td style="text-align: center;">August 29, 2016</td>
+        <td style="text-align: center;">February 14, 2017</td>
     </tr>
     <tr>
         <td style="text-align: center;">Redmi Note 3 Pro Prime</td>
-        <td style="text-align: center;">October 17, 2016</td>
+        <td style="text-align: center;">January 2016</td>
     </tr>
     <tr>
         <td style="text-align: center;">Redmi Note 3</td>
-        <td style="text-align: center;">February 10, 2016</td>
+        <td style="text-align: center;">Novembre 2015</td>
     </tr>
     <tr>
         <td style="text-align: center;">Xiaomi Redmi 3S Prime</td>
