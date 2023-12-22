@@ -565,31 +565,31 @@ Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy J5 (2016)</td>
-        <td style="text-align: center;">June 22, 2016</td>
+        <td style="text-align: center;">April 2016</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy J7 (2016)</td>
-        <td style="text-align: center;">June 22, 2016</td>
+        <td style="text-align: center;">April 2016</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy Grand Prime Plus</td>
-        <td style="text-align: center;">July 27, 2016</td>
+        <td style="text-align: center;">November 2016</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy C5 Pro</td>
-        <td style="text-align: center;">August 20, 2016</td>
+        <td style="text-align: center;">March 2017</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy J7 Nxt</td>
-        <td style="text-align: center;">October 21, 2016</td>
+        <td style="text-align: center;">July 2017</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy C7 Pro</td>
-        <td style="text-align: center;">November 8, 2016</td>
+        <td style="text-align: center;">February 2017</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy A7 (2016)</td>
-        <td style="text-align: center;">November 13, 2016</td>
+        <td style="text-align: center;">December 2015</td>
     </tr>
 </table>
 
