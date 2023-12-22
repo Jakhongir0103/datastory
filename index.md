@@ -673,7 +673,7 @@ function showFrame7(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_lda" style="display: block;">Before Release</iframe>
+<iframe class="3_2_lda" src="assets/plot/3_2_lda_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_lda" style="display: block;">Before Release</iframe>
 <iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_lda" style="display: none;">During Release</iframe>
 
 We notice that the content discussed before a product release is quite distinct from what's covered during the actual release.
@@ -711,14 +711,12 @@ function showFrame8(frameId) {
 
 <!-- Create the dropdown menu -->
 <select onchange="showFrame8(this.value)" style="margin: 8px 0; width: 20%;">
-  <option value="id_1_timeseries" selected>Subscribers</option>
-  <option value="id_2_timeseries">Ratio Subs</option>
+  <option value="id_2_timeseries" selected>Ratio Subs</option>
   <option value="id_3_timeseries">Ratio Views</option>
 </select>
 
 <!-- Create the iframes -->
-<iframe class="3_2_timeseries" src="assets/plot/3_2_time_subs.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_timeseries" style="display: block;">Subscribers</iframe>
-<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_subs.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_timeseries" style="display: none;">Ratio Subs</iframe>
+<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_subs.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_timeseries" style="display: block;">Ratio Subs</iframe>
 <iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3_timeseries" style="display: none;">Ratio Views</iframe>
 
 It's evident that the channels talking about a product before its release experience growth well before the actual launch. What's intriguing is that they not only attract subscribers leading up to the release but also manage to retain those subscribers even after the product hits the market. It's like building anticipation pays off in long-term support!
