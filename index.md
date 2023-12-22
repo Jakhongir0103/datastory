@@ -346,7 +346,10 @@ To perform this analysis, we define the __regularity__ in the following way:
 <div id="mathFormula">
     \( \text{regularity} = n \cdot \log\left(1 + \frac{1}{\text{std}(f)}\right) \)
 </div>
-where $\text{n}$ is the number of videos uploaded within a month for a YouTuber, and $\text{f}$ = $\frac{1}{\text{delay}}$ where $\text{delay}$ is time in days between 2 consecutive videos.
+<p id="mathFormula">
+    Where \( \text{n} \) is the number of videos uploaded within a month for a YouTuber, 
+    and \( \text{f} = \frac{1}{\text{delay}} \) where \( \text{delay} \) is the time in days between 2 consecutive videos.
+</p>
 
 
 This metric evaluates not just the frequency of video uploads on tech channels but also the consistency of their posting schedule. Channels that maintain a regular interval between video uploads gain a distinct advantage, highlighting the importance of a steady content rhythm. In contrast, channels with erratic schedules-such as releasing multiple videos on a single day followed by a prolonged period of inactivity—are less favored by this metric. Thus, while the overall quantity of content remains a key factor, the regularity and predictability of uploads emerge as crucial elements in driving channel growth.
@@ -561,7 +564,7 @@ First, we select the videos that got up to 100,000 views as we are targeting new
 
 Both methods indeed confirm that the density of the positive titles is higher compared to the negative ones, however we observe that most of the "top videos" have neutral titles. We, now, want to see the correlation between views and sentiment more statistically using an ols regression and come up with the following results:
 
-<div style="display: flex; justify-content: space-between;">
+<div id="mathFormula" style="display: flex; justify-content: space-between;">
 
 $$ Y = 0.56 + 0.09 \cdot S_1 $$
 $$ Y = 0.55 + 0.18 \cdot S_2 $$
@@ -598,7 +601,9 @@ with the following likelihood:
     </tr>
 </table>
 
-where $Y$ is the ratio of the number of views of a video to the number of subscribers of the corresponding channel, $S_1$ and $S_2$ are the above 2 methods of calculating the sentiment respectively.
+<p id="mathFormula">
+    where $Y$ is the ratio of the number of views of a video to the number of subscribers of the corresponding channel, $S_1$ and $S_2$ are the above 2 methods of calculating the sentiment respectively.
+</p>
 
 In the first scenario, although the impact of positive sentiments on the average views isn't very large, it still matters because it is statistically significant (the likelihood of it happening by chance is less than 5%). Now, in the second case, things get more interesting. Not only is the influence of positive sentiments quite substantial, but it's also statistically significant. This implies that using positive language in titles can boost the number of views by up to a third compared to titles with neutral language. In simpler terms, having a positive title increases the likelihood of attracting more viewers.
 
@@ -690,7 +695,9 @@ function showFrame4(frameId) {
 
 We carefully balanced our groups, and as we can see from the results Group 1 and Group 2 are well-balanced, but Group 3, with fewer channels, is less ideal. Despite the limitations in Group 3, our analysis draws meaningful conclusions from the well-matched Group 1 and Group 2.
 
-Now, we're exploring how the monthly _Growth Rate_ of new subscribers compares to the total number of subscribers over a one-year span (more specifically defined as $ \frac{\text{\# monthly new subscribers}}{\text{\# total subscribers}} $). We're looking at a period that spans 3 months before and after our analysis perdiod, totaling 1 year around the product release date.
+<p id="mathFormula">
+    Now, we're exploring how the monthly _Growth Rate_ of new subscribers compares to the total number of subscribers over a one-year span (more specifically defined as $ \frac{\text{\# monthly new subscribers}}{\text{\# total subscribers}} $). We're looking at a period that spans 3 months before and after our analysis perdiod, totaling 1 year around the product release date.
+</p>
 
 <script>
 function showFrame5(frameId) {
