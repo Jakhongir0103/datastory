@@ -10,27 +10,23 @@ use-site-title: true
 
 If you're interested in creating your own YouTube channel in the field of tech product reviews or are curious about how these channels gain attraction and evolve over time, you've made the right choice by clicking this link!
 
-In this blog post, the Datasquad will cover everything you need to know about YouTube tech channels, from the types and range of products to review, to the timing of the release of videos, and even how to write your video titles to gain the most attraction!
+In this blog post, our team is going to spill all the secrets about YouTube tech channels. We'll cover everything from the kinds of products you should review to when you should upload your videos. We'll even give you tips on crafting attention-grabbing video titles!
 
-All this is done through a very thorough analysis of the YouNiverse dataset, Large-Scale Channel, and Video Metadata from English-Speaking YouTube.
+We dug deep into the a huge YouTube dataset, checking out loads of data from English-speaking YouTube channels. Our goal was to figure out what makes a tech channel successful. We started with some ideas about how things work, tested them out, and now we're here to share the scoop with you. After reading this post, you'll have some handy guidelines to kickstart your own awesome YouTube journey! Enjoy the post by going through the following sections:
 
-We conducted our analysis by first putting together hypotheses of how a successful tech channel operates, then we (dis)proved each of the hypotheses so that after reading this post, you go out with general guidelines that will help you in your YouTube journey.
-
-## The Blog is structured in the following way:
-
-#### Characteristics of successful Tech channels:
+**Characteristics of successful Tech channels:**
 1. What is the ideal video duration for maximizing engagement?
 2. How often should you release new content to optimize channel growth?
 3. What impact does the type of reviewed product have on the growth of the channels?
 
-#### Optimizing Viewership Through Video Titles:
+**Optimizing Viewership Through Video Titles:**
 1. Can the sentiment in your video title affect its view count?
 
-#### Making the Most out of Product Release Dates:
+**Making the Most out of Product Release Dates:**
 1. Do product launch events significantly impact YouTubers?
 2. What key topics should be addressed before, during, and after a product release?
 
-# What should the duration of your videos be?
+# What is the ideal video duration for maximizing engagement?
 
 Have you ever wondered how the trend of a YouTube video’s length evolves through time? Does it have anything to do with the success of the video? And if we want to upload a video of what duration should it be? We try to get some insights on these questions by analyzing video durations.
 
@@ -40,43 +36,123 @@ In our analysis we split videos into 2 groups short to medium length videos (0-2
 
 The first basic thing to do is to see whether there exists a correlation between video durations and number of likes and dislikes.
 
-**plots**
+<script>
+function showFrame1_1(frameId) {
+  // Get all iframes with the figure_1_1 class
+  var frames = document.getElementsByClassName('figure_1_1');
+
+  // Hide all iframes with the figure_1_1 class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame1_1(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_1_1" selected>Likes</option>
+  <option value="id_1_1_2">Dislikes</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_1_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_1_2" style="display: none;">Dislikes</iframe>
 
 There is a relatively high positive correlation (that is decreasing across the years), but significant (p_value < 0.05) between the duration of a video and the number of likes it gets. Moreover, we see significant negative correlations in most years between # of dislikes and duration and so with longer videos the number of dislikes decreases. This can be explained by the fact that with longer videos on average, the video contains more content and so is more valuable/interesting and thus gets more likes and less dislikes.
 
 Let's now see the trend of likes, dislikes, and duration over the years to take their evolution into consideration.
 
-<iframe src="assets/plot/fig2.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<script>
+function showFrame1_1(frameId) {
+  // Get all iframes with the figure_1_2 class
+  var frames = document.getElementsByClassName('figure_1_2');
+
+  // Hide all iframes with the figure_1_2 class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame1_1(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_2_1" selected>Likes</option>
+  <option value="id_1_2_2">Dislikes</option>
+  <option value="id_1_2_3">Ratio</option>
+  <option value="id_1_2_4">Duration</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_3" style="display: none;">Ratio</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_3.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_4" style="display: none;">Duration</iframe>
 
 We see from the above plots that both the number of dislikes and likes have been increasing across the years, potentially due to more users on the platform or more user engagement. We particularly note that the rate of increase of the number of likes is much higher than the one of dislikes as shown by the increasing ratio of like/dislike. This combined with the fact that the length of YouTube videos has been increasing over the years explains why we had higher correlation between duration and likes than we had with dislikes.
 
 Let's now see how the video duration is related to user engagement. We do it by plotting the moving average of likes to dislikes ratio over the duration of a video.
 
-<iframe src="assets/plot/fig3.html" width="700px" height="350px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_1_moving_avf_1.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 Wow!! See that huge drop around 600 seconds =10 minutes?? Is it by sheer luck?? Let’s dig deeper into this.
 
 Our hypothesis is that the drop could be caused by an enormous number of 10min videos on YouTube that contain low quality content, as youtubers usually try to produce videos around this duration to benefit from more ads on their videos (YouTube has a video length threshold of 10 min past which youtubers get 2 ads on their videos and thus more money). Let’s try to prove this.
 
-**plots**
+<script>
+function showFrame1_3(frameId) {
+  // Get all iframes with the figure_1_3 class
+  var frames = document.getElementsByClassName('figure_1_3');
+
+  // Hide all iframes with the figure_1_3 class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame1_3(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_3_1" selected>Ratio</option>
+  <option value="id_1_3_2">Likes</option>
+  <option value="id_1_3_3">Dislikes</option>
+  <option value="id_1_3_4"># Videos</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_3" style="display: none;">Ratio</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_4" style="display: none;">Duration</iframe>
 
 First we make sure that the drop is not caused by the “moving” nature of the average. Indeed, we see that even by plotting the mean for each time interval (not 'moving') the drop is still there. Also, we notice that the number of likes decreased but the number of dislikes and number of videos stayed the same between the 10 min interval and the interval before it.
 
 Let’s try to focus only on the 10 minute videos.
 
-<iframe src="assets/plot/fig5.html" width="800px" height="710px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_1_hist_1.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 hmm, interesting?? This looks like a power law. Could the drop be caused by outliers? Let’s  plot the median instead of the mean.
 
-**plots**
+<iframe src="assets/plot/1_1_10_mint_stat_meadian_0.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 Nope! The drop is still there.
 
 What if we compute the sum ?
 
-**plots**
+<iframe src="assets/plot/1_1_10_mint_stat_sum_0.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-We see from the above plot that the sum is decreasing from small duration to high duration (from the left time interval to the right time interval), but remember that the *number of videos* stayed the same for the 2 time intervals (480.2, 600] and (600, 719.8] which **explains the drop seen** when computing the mean (as we have the same denominator but a lower numerator: the like to dislike ratio is decreasing from small duration to high duration, whereas the number of videos has been decreasing from small duration to high duration **except** for the time interval of around 600 seconds = 10 minutes).
+We see from the above plot that the sum is decreasing from small duration to high duration (from the left time interval to the right time interval), but remember that the *number of videos* stayed the same for the 2 time intervals (480.2, 600) and (600, 719.8) which **explains the drop seen** when computing the mean (as we have the same denominator but a lower numerator: the like to dislike ratio is decreasing from small duration to high duration, whereas the number of videos has been decreasing from small duration to high duration **except** for the time interval of around 600 seconds = 10 minutes).
 
 For the curious ones, further analysis on why the number of videos stayed the same for these 2 duration intervals can be found in our notebook.
 
@@ -84,30 +160,177 @@ For the curious ones, further analysis on why the number of videos stayed the sa
 
 Of course not all tech videos are less than 20 minutes, so now let's turn our attention to the videos of more than 20 minutes and apply the same analysis on them as we did above.
 
-**plots**
+<script>
+function showFrame1_4(frameId) {
+  // Get all iframes with the figure_1_4 class
+  var frames = document.getElementsByClassName('figure_1_4');
+
+  // Hide all iframes with the figure_1_4 class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame1_4(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_4_1" selected>Likes</option>
+  <option value="id_1_4_2">Dislikes</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="figure_1_4" src="assets/plot/1_1_bars_pearson_long_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_4_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_4" src="assets/plot/1_1_bars_pearson_long_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_4_2" style="display: none;">Dislikes</iframe>
 
 The opposite effect is seen here compared to videos of less than 20 minutes. The longer the video the more dislikes it gets and the less likes it gets which makes sense as longer videos (longer than 20 minutes) tend to be boring/redundant.
 
-**plots**
+<script>
+function showFrame1_5(frameId) {
+  // Get all iframes with the figure_1_5 class
+  var frames = document.getElementsByClassName('figure_1_5');
+
+  // Hide all iframes with the figure_1_5 class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the dropdown menu -->
+<select onchange="showFrame1_5(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_5_1" selected>Likes</option>
+  <option value="id_1_5_2">Dislikes</option>
+  <option value="id_1_5_3">Ratio</option>
+  <option value="id_1_5_4">Duration</option>
+</select>
+
+<!-- Create the iframes -->
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_3" style="display: none;">Ratio</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_4" style="display: none;">Duration</iframe>
 
 Similarly for this case, the number of dislikes and likes have been increasing across the years. However, here we see that the length of YouTube videos has been decreasing over the years, maybe hinting at the fact that youtubers noticed that longer videos bore people more and they thus went for shorter videos. Let's now see how the video duration is related to user engagement.
 
-**plots**
+<iframe src="assets/plot/1_1_moving_avf_2_long.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 Okay, we see that the ratio of likes to dislikes is fluctuating a lot for videos between 1200 seconds (20 min) and 10000 seconds (2.7 hours). Because this is a wide range, let's see how the videos spread out across this range and then break it down into smaller ranges and see what the videos are about in different smaller duration ranges.
 
-**plots**
+<iframe src="assets/plot/1_1_last_dist.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 So now, let's see what the people are speaking about in the videos.
 
-**plots**
+
+<table style="border: 1px solid black; width: 100%; text-align: center;margin-left: auto; margin-right: auto;">
+    <tr>
+        <th style="text-align: center;" colspan="2">20-40 minutes</th>
+        <th style="text-align: center;" colspan="2">40-60 minutes</th>
+        <th style="text-align: center;" colspan="2">60-200 minutes</th>
+    </tr>
+    <tr>
+        <th style="text-align: center;">Words</th>
+        <th style="text-align: center;">Frequency</th>
+        <th style="text-align: center;">Words</th>
+        <th style="text-align: center;">Frequency</th>
+        <th style="text-align: center;">Words</th>
+        <th style="text-align: center;">Frequency</th>
+    </tr>
+    <tr>
+        <td style="text-align: center;">review</td>
+        <td style="text-align: center;">1427</td>
+        <td style="text-align: center;">review</td>
+        <td style="text-align: center;">201</td>
+        <td style="text-align: center;">android</td>
+        <td style="text-align: center;">297</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">galaxy</td>
+        <td style="text-align: center;">915</td>
+        <td style="text-align: center;">part</td>
+        <td style="text-align: center;">147</td>
+        <td style="text-align: center;">weekly</td>
+        <td style="text-align: center;">198</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">samsung</td>
+        <td style="text-align: center;">803</td>
+        <td style="text-align: center;">day</td>
+        <td style="text-align: center;">120</td>
+        <td style="text-align: center;">live</td>
+        <td style="text-align: center;">168</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">unboxing</td>
+        <td style="text-align: center;">630</td>
+        <td style="text-align: center;">galaxy</td>
+        <td style="text-align: center;">113</td>
+        <td style="text-align: center;">day</td>
+        <td style="text-align: center;">164</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">part</td>
+        <td style="text-align: center;">462</td>
+        <td style="text-align: center;">new</td>
+        <td style="text-align: center;">104</td>
+        <td style="text-align: center;">show</td>
+        <td style="text-align: center;">160</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">android</td>
+        <td style="text-align: center;">406</td>
+        <td style="text-align: center;">google</td>
+        <td style="text-align: center;">99</td>
+        <td style="text-align: center;">macbreak</td>
+        <td style="text-align: center;">151</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">note</td>
+        <td style="text-align: center;">392</td>
+        <td style="text-align: center;">show</td>
+        <td style="text-align: center;">98</td>
+        <td style="text-align: center;">part</td>
+        <td style="text-align: center;">132</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">full</td>
+        <td style="text-align: center;">375</td>
+        <td style="text-align: center;">android</td>
+        <td style="text-align: center;">95</td>
+        <td style="text-align: center;">today</td>
+        <td style="text-align: center;">120</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">pro</td>
+        <td style="text-align: center;">371</td>
+        <td style="text-align: center;">samsung</td>
+        <td style="text-align: center;">93</td>
+        <td style="text-align: center;">galaxy</td>
+        <td style="text-align: center;">119</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">first</td>
+        <td style="text-align: center;">342</td>
+        <td style="text-align: center;">iphone</td>
+        <td style="text-align: center;">73</td>
+        <td style="text-align: center;">io</td>
+        <td style="text-align: center;">115</td>
+    </tr>
+</table>
 
 As we can see from above, the videos between 20 and 60 minutes which account for (get the percentage of these videos from all long videos) of the videos, are still about the review of the tech products, but they are full and extended review video possibly broken into several parts, while the videos with duration above 1h are more from the release day live videos, that last for a couple of hours.
 
 Putting it all together we can say that the best range for the duration of a video is between 16 min and 2.7 hours, however longer videos are usually meant for live videos from conferences. The main takeaway here is that we certainly want to avoid having really short videos in order to provide meaningful content to viewers and also avoid having really long videos so that we avoid boring them!
 
 
-# How frequently should you upload?
+# How often should you release new content to optimize channel growth?
 As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews , one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
 
 As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie:
@@ -333,7 +556,7 @@ There isn't a significant statistical difference in the number of subscribers an
 Among the successful channels covering a wide range of tech products, the ones that attract more viewers are Phones, Desktop setup, Laptop, and Headphones, in that order of importance. Successful channels often produce videos featuring a combination of Phones, Laptop, and Headphones.
 
 
-# Does the sentiment of the title have an impact on the views of the video?
+# Can the sentiment in your video title affect its view count?
 
 Here, we want to see the influence of titles sentiment on attracting the viewers. We choose the number of views as our metric, as a title is intended to attract users to click on our video.
 
