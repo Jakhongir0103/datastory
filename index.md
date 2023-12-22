@@ -14,17 +14,12 @@ In this blog post, our team is going to spill all the secrets about YouTube tech
 
 We dug deep into the a huge YouTube dataset, checking out loads of data from English-speaking YouTube channels. Our goal was to figure out what makes a tech channel successful. We started with some ideas about how things work, tested them out, and now we're here to share the scoop with you. After reading this post, you'll have some handy guidelines to kickstart your own awesome YouTube journey! Enjoy the post by going through the following sections:
 
-**Characteristics of successful Tech channels:**
-1. What is the ideal video duration for maximizing engagement?
-2. How often should you release new content to optimize channel growth?
-3. What impact does the type of reviewed product have on the growth of the channels?
+**Characteristics of successful Tech channels:** <br> 1. What is the ideal video duration for maximizing engagement? <br>2. How often should you release new content to optimize channel growth?
+<br>3. What impact does the type of reviewed product have on the growth of the channels?
 
-**Optimizing Viewership Through Video Titles:**
-1. Can the sentiment in your video title affect its view count?
+**Optimizing Viewership Through Video Titles:**<br>1. Can the sentiment in your video title affect its view count?
 
-**Making the Most out of Product Release Dates:**
-1. Do product launch events significantly impact YouTubers?
-2. What key topics should be addressed before, during, and after a product release?
+**Making the Most out of Product Release Dates:**<br>1. Do product launch events significantly impact YouTubers?<br>2. What key topics should be addressed before, during, and after a product release?
 
 # What is the ideal video duration for maximizing engagement?
 
@@ -37,7 +32,7 @@ In our analysis we split videos into 2 groups short to medium length videos (0-2
 The first basic thing to do is to see whether there exists a correlation between video durations and number of likes and dislikes.
 
 <script>
-function showFrame1_1(frameId) {
+function showFrame1_0(frameId) {
   // Get all iframes with the figure_1_1 class
   var frames = document.getElementsByClassName('figure_1_1');
 
@@ -53,14 +48,14 @@ function showFrame1_1(frameId) {
 </script>
 
 <!-- Create the dropdown menu -->
-<select onchange="showFrame1_1(this.value)" style="margin: 8px 0; width: 20%;">
+<select onchange="showFrame1_0(this.value)" style="margin: 8px 0; width: 20%;">
   <option value="id_1_1_1" selected>Likes</option>
   <option value="id_1_1_2">Dislikes</option>
 </select>
 
 <!-- Create the iframes -->
-<iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_1_1" style="display: block;">Likes</iframe>
-<iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_1_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson0.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_1_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_1_2" style="display: none;">Dislikes</iframe>
 
 There is a relatively high positive correlation (that is decreasing across the years), but significant (p_value < 0.05) between the duration of a video and the number of likes it gets. Moreover, we see significant negative correlations in most years between # of dislikes and duration and so with longer videos the number of dislikes decreases. This can be explained by the fact that with longer videos on average, the video contains more content and so is more valuable/interesting and thus gets more likes and less dislikes.
 
@@ -91,10 +86,10 @@ function showFrame1_1(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="figure_1_2" src="assets/plot/1_1_stat_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_1" style="display: block;">Likes</iframe>
-<iframe class="figure_1_2" src="assets/plot/1_1_stat_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_2" style="display: none;">Dislikes</iframe>
-<iframe class="figure_1_2" src="assets/plot/1_1_stat_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_3" style="display: none;">Ratio</iframe>
-<iframe class="figure_1_2" src="assets/plot/1_1_stat_3.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_2_4" style="display: none;">Duration</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_0.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_2_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_2_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_2.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_2_3" style="display: none;">Ratio</iframe>
+<iframe class="figure_1_2" src="assets/plot/1_1_stat_3.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_2_4" style="display: none;">Duration</iframe>
 
 We see from the above plots that both the number of dislikes and likes have been increasing across the years, potentially due to more users on the platform or more user engagement. We particularly note that the rate of increase of the number of likes is much higher than the one of dislikes as shown by the increasing ratio of like/dislike. This combined with the fact that the length of YouTube videos has been increasing over the years explains why we had higher correlation between duration and likes than we had with dislikes.
 
@@ -131,10 +126,10 @@ function showFrame1_3(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_1" style="display: block;">Likes</iframe>
-<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_2" style="display: none;">Dislikes</iframe>
-<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_3" style="display: none;">Ratio</iframe>
-<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_3_4" style="display: none;">Duration</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_0.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_3_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_3_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_3_3" style="display: none;">Ratio</iframe>
+<iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_3_4" style="display: none;">Duration</iframe>
 
 First we make sure that the drop is not caused by the “moving” nature of the average. Indeed, we see that even by plotting the mean for each time interval (not 'moving') the drop is still there. Also, we notice that the number of likes decreased but the number of dislikes and number of videos stayed the same between the 10 min interval and the interval before it.
 
@@ -183,8 +178,8 @@ function showFrame1_4(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="figure_1_4" src="assets/plot/1_1_bars_pearson_long_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_4_1" style="display: block;">Likes</iframe>
-<iframe class="figure_1_4" src="assets/plot/1_1_bars_pearson_long_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_4_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_4" src="assets/plot/1_1_bars_pearson_long_0.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_4_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_4" src="assets/plot/1_1_bars_pearson_long_1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_4_2" style="display: none;">Dislikes</iframe>
 
 The opposite effect is seen here compared to videos of less than 20 minutes. The longer the video the more dislikes it gets and the less likes it gets which makes sense as longer videos (longer than 20 minutes) tend to be boring/redundant.
 
@@ -213,10 +208,10 @@ function showFrame1_5(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_0.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_1" style="display: block;">Likes</iframe>
-<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_2" style="display: none;">Dislikes</iframe>
-<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_3" style="display: none;">Ratio</iframe>
-<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_5_4" style="display: none;">Duration</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_0.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_5_1" style="display: block;">Likes</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_5_2" style="display: none;">Dislikes</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_5_3" style="display: none;">Ratio</iframe>
+<iframe class="figure_1_5" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_5_4" style="display: none;">Duration</iframe>
 
 Similarly for this case, the number of dislikes and likes have been increasing across the years. However, here we see that the length of YouTube videos has been decreasing over the years, maybe hinting at the fact that youtubers noticed that longer videos bore people more and they thus went for shorter videos. Let's now see how the video duration is related to user engagement.
 
@@ -342,7 +337,7 @@ As regularity depends highly on the status of YouTubers, whether it's their full
 
 Let's first see their repartitions in this pie chart:
 
-<iframe src="assets/plot/1_2_pie.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_2_pie.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 We can remark that more than half of them are small YouTubers, that almost a fifth are mid-range YouTubers, and that only around 6% of them are famous and have more than 500k subscribers. Our question then is , do you upload more frequency when you are famous? And more specifically, is the category in which you lie impacts your regularity?
 
@@ -358,7 +353,7 @@ This metric evaluates not just the frequency of video uploads on tech channels b
 
 And that is what we observe in this plot:
 
-<iframe src="assets/plot/1_2_bars_1.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_2_bars_1.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 The main observation that we can do in this case, is that on average, the higher the category (and thus the number of subscribers), the higher the regularity is, and confidence intervals are not overlapping anywhere except within the first two categories that represent relatively small youtubers.
 
@@ -393,14 +388,14 @@ function showFrame2(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1" style="display: none;">0-10k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2" style="display: none;">10k-50k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3" style="display: none;">50k-100k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="530px" frameborder="0" position="relative" id="id_4" style="display: none;">100k-500k</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_5" style="display: none;">500k-1M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_6" style="display: none;">1M-2.5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="530px" frameborder="0" position="relative" id="id_7" style="display: none;">2.5M-5M</iframe>
-<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="530px" frameborder="0" position="relative" id="id_8" style="display: block;">5M+ Subscribers</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines0-10k.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1" style="display: none;">0-10k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines10k-50k.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2" style="display: none;">10k-50k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines50k-100k.html" width="750px" height="550px" frameborder="0" position="relative" id="id_3" style="display: none;">50k-100k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines100k-500k.html" width="750px" height="550px" frameborder="0" position="relative" id="id_4" style="display: none;">100k-500k</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines500k-1M.html" width="750px" height="550px" frameborder="0" position="relative" id="id_5" style="display: none;">500k-1M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines1M-2.5M.html" width="750px" height="550px" frameborder="0" position="relative" id="id_6" style="display: none;">1M-2.5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="550px" frameborder="0" position="relative" id="id_7" style="display: none;">2.5M-5M</iframe>
+<iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="550px" frameborder="0" position="relative" id="id_8" style="display: block;">5M+ Subscribers</iframe>
 
 
 Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
@@ -413,7 +408,7 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 - We first select all the channels that have been in this range at some point of time during this period and let's check how does the subscribers growth rate evolves depending on the regularity bin.
 
-<iframe src="assets/plot/1_2_bars_2.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_2_bars_2.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups, using the same time series comparison that we have done before. 
 
@@ -440,8 +435,8 @@ function showFrame1(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">Regularity above 32</iframe>
-<iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="530px" frameborder="0" position="relative" id="negative" style="display: none;">Regularity below 32</iframe>
+<iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_0.html" width="750px" height="550px" frameborder="0" position="relative" id="positive" style="display: block;">Regularity above 32</iframe>
+<iframe class="regularity_range" src="assets/plot/1_2_regularity_lines_range_4_1.html" width="750px" height="550px" frameborder="0" position="relative" id="negative" style="display: none;">Regularity below 32</iframe>
 
 From the plots above, we can observe that for channels reaching a regularity above 32, over the 3-year period we analyzed, there is a high correlation between growth rate and regularity (they closely track each other for most of the period). This suggests that for YouTubers with 500k to 1M subscribers, once they reach the regularity of above 32, they should try to sustain the pace of frequency, as slowing the frequency may result in a decrease in the growth as well, as they are closely related at that point.
 
@@ -470,7 +465,7 @@ In this section, we are going to focus on the types of review products. More spe
 
 Let's first see which product types are more common among the YouTubers:
 
-<iframe src="assets/plot/1_3_timeseries.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_3_timeseries.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 As we can see, most channels tend to focus on phones. It just means phones are a common topic to focus on, but we still need to see (in the next sub-section) how it actually influences the channel's growth.
 
@@ -506,8 +501,8 @@ function showFrame3(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="1_3_dist" src="assets/plot/1_3_distribution_susb.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_dist" style="display: block;">Subscribers</iframe>
-<iframe class="1_3_dist" src="assets/plot/1_3_distribution_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_dist" style="display: none;">Views</iframe>
+<iframe class="1_3_dist" src="assets/plot/1_3_distribution_susb.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_dist" style="display: block;">Subscribers</iframe>
+<iframe class="1_3_dist" src="assets/plot/1_3_distribution_views.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2_dist" style="display: none;">Views</iframe>
 
 From the above distribution of 'narrow' and 'wide' channels, we can see that non of the 2 groups is clearly outperforming the other. We can also confirm it more statistically. In fact, when we compute the statistical difference between them we get the following results:
 
@@ -547,7 +542,7 @@ Now, we know the secret combination of the tech products, but does that mean the
 
 For each video uploaded, let's get the ratio of the number of views of the video to the total number of views of the channel at the time of release of the video. Then, we want to see if any one of the products have a clearly higher ratio of views compared to the others. The reason why we are diving the number of views by the total number of views of the channel at the time of the release is to remove the influence of the current popularity of the channel.
 
-<iframe src="assets/plot/1_3_bars.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/1_3_bars.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 Here, we can see that no single product is totally outperforming the other. However it is worth mentioning that the _phones_ tend to attract more viewers compared to the _camera_ and _smart watches_.
 
@@ -562,7 +557,7 @@ Here, we want to see the influence of titles sentiment on attracting the viewers
 
 First, we select the videos that got up to 100,000 views as we are targeting new/small channels. Then we select the top 10% as we want to analyse the characteristics of the best performing videos. To assess the "success" of a video, we also divide the number of views by the number of subscribers of the corresponding channels to remove the influence of the channel's popularity. Finally, this is the distribution of the sentiment of the titles calculated in 2 methods:
 
-<iframe src="assets/plot/2_1_distribution.html" width="750px" height="530px" frameborder="0" position="relative">Plot</iframe>
+<iframe src="assets/plot/2_1_distribution.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 Both methods indeed confirm that the density of the positive titles is higher compared to the negative ones, however we observe that most of the "top videos" have neutral titles. We, now, want to see the correlation between views and sentiment more statistically using an ols regression and come up with the following results:
 
@@ -721,9 +716,9 @@ function showFrame5(frameId) {
 </div>
 
 <!-- Create the iframes -->
-<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_x.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_ts" style="display: block;">Subscribers</iframe>
-<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_7.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_ts" style="display: none;">Views</iframe>
-<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_galaxy_s9.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3_ts" style="display: none;">Views</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_x.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_ts" style="display: block;">Subscribers</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_iphone_7.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2_ts" style="display: none;">Views</iframe>
+<iframe class="3_1_timeseries" src="assets/plot/3_1_timeseries_galaxy_s9.html" width="750px" height="550px" frameborder="0" position="relative" id="id_3_ts" style="display: none;">Views</iframe>
 
 _where the green line marks the day a product is released. Alongside it, two red lines span a six-month stretch. This is the perdiod during which if a channel talked about the product, we consider it "discussed";_
 
@@ -873,6 +868,35 @@ _Let's now turn our attention to the topics discussed in those videos at differe
 
 Now that we have general guidelines about how to upload videos about a given tech product near its release date, we need to know what topics to discuss and when. The following section will answer this question. Now, let's see what are the topics discussed before and during the release period:
 
+<!-- <script>
+function showFrame7(frameId) {
+  // Get all iframes with the 3_2_lda class
+  var frames = document.getElementsByClassName('3_2_lda');
+
+  // Hide all iframes with the 3_2_lda class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script> -->
+
+<!-- Create the dropdown menu -->
+<!-- <select onchange="showFrame7(this.value)" style="margin: 8px 0; width: 20%;">
+  <option value="id_1_lda" selected>Before Release</option>
+  <option value="id_2_lda">During Release</option>
+</select> -->
+
+<!-- Create the iframes -->
+<!-- <iframe class="3_2_lda" src="assets/plot/3_2_lda_1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_lda" style="display: block;">Before Release</iframe>
+<iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2_lda" style="display: none;">During Release</iframe> -->
+
+<!-- Include Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 <script>
 function showFrame7(frameId) {
   // Get all iframes with the 3_2_lda class
@@ -887,6 +911,18 @@ function showFrame7(frameId) {
   var frame = document.getElementById(frameId);
   frame.style.display = 'block';
 }
+
+function toggleFullScreen(frameId) {
+  var frame = document.getElementById(frameId);
+  
+  if (!document.fullscreenElement) {
+    frame.requestFullscreen().catch(err => {
+      console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}
 </script>
 
 <!-- Create the dropdown menu -->
@@ -896,8 +932,17 @@ function showFrame7(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="3_2_lda" src="assets/plot/3_2_lda_1.html" width="750px" height="530px" frameborder="0" position="relative" id="id_1_lda" style="display: block;">Before Release</iframe>
-<iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_lda" style="display: none;">During Release</iframe>
+<iframe class="3_2_lda" src="assets/plot/3_2_lda_1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_lda" style="display: block;">Before Release
+  <button onclick="toggleFullScreen('id_1_lda')" style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer;">
+    <i class="fas fa-expand"></i> <!-- Font Awesome icon for full screen -->
+  </button>
+</iframe>
+
+<iframe class="3_2_lda" src="assets/plot/3_2_lda_2.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2_lda" style="display: none;">During Release
+  <button onclick="toggleFullScreen('id_2_lda')" style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer;">
+    <i class="fas fa-expand"></i> <!-- Font Awesome icon for full screen -->
+  </button>
+</iframe>
 
 We notice that the content discussed before a product release is quite distinct from what's covered during the actual release.
 
@@ -939,7 +984,7 @@ function showFrame8(frameId) {
 </select>
 
 <!-- Create the iframes -->
-<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_subs.html" width="750px" height="530px" frameborder="0" position="relative" id="id_2_timeseries" style="display: block;">Ratio Subs</iframe>
-<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_views.html" width="750px" height="530px" frameborder="0" position="relative" id="id_3_timeseries" style="display: none;">Ratio Views</iframe>
+<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_subs.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2_timeseries" style="display: block;">Ratio Subs</iframe>
+<iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_views.html" width="750px" height="550px" frameborder="0" position="relative" id="id_3_timeseries" style="display: none;">Ratio Views</iframe>
 
 It's evident that the channels talking about a product before its release experience growth well before the actual launch. What's intriguing is that they not only attract subscribers leading up to the release but also manage to retain those subscribers even after the product hits the market. It's like building anticipation pays off in long-term support!
