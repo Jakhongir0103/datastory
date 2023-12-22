@@ -608,23 +608,23 @@ and again these are the products released during our analysis period:
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy A8 (2018)</td>
-        <td style="text-align: center;">April 20, 2018</td>
+        <td style="text-align: center;">December 2017</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy A8+ (2018)</td>
-        <td style="text-align: center;">May 31, 2018</td>
+        <td style="text-align: center;">December 2017</td>
     </tr>
     <tr>
         <td style="text-align: center;">Samsung Galaxy J6+</td>
-        <td style="text-align: center;">May 30, 2018</td>
+        <td style="text-align: center;">September 2018</td>
     </tr>
     <tr>
         <td style="text-align: center;">Xiaomi Mi 8</td>
-        <td style="text-align: center;">May 29, 2018</td>
+        <td style="text-align: center;">May 2018</td>
     </tr>
     <tr>
         <td style="text-align: center;">Xiaomi Mi 8 Pro</td>
-        <td style="text-align: center;">May 29, 2018</td>
+        <td style="text-align: center;">September 2018</td>
     </tr>
     <tr>
         <td style="text-align: center;">...</td>
