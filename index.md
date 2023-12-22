@@ -12,7 +12,7 @@ If you're interested in creating your own YouTube channel in the field of tech p
 
 In this blog post, our team is going to spill all the secrets about YouTube tech channels. We'll cover everything from the kinds of products you should review to when you should upload your videos. We'll even give you tips on crafting attention-grabbing video titles!
 
-We dug deep into the a huge YouTube dataset, checking out loads of data from English-speaking YouTube channels. Our goal was to figure out what makes a tech channel successful. We started with some ideas about how things work, tested them out, and now we're here to share the scoop with you. After reading this post, you'll have some handy guidelines to kickstart your own awesome YouTube journey! Enjoy the post by going through the following sections:
+We dug deep into a huge YouTube dataset, checking out loads of data from English-speaking YouTube channels. Our goal was to figure out what makes a tech channel successful. We started with some ideas about how things work, tested them out, and now we're here to share the scoop with you. After reading this post, you'll have some handy guidelines to kickstart your own awesome YouTube journey! Enjoy the post by going through the following sections:
 
 **Characteristics of successful Tech channels:** <br> 1. What is the ideal video duration for maximizing engagement? <br>2. How often should you release new content to optimize channel growth?
 <br>3. What impact does the type of reviewed product have on the growth of the channels?
@@ -23,13 +23,13 @@ We dug deep into the a huge YouTube dataset, checking out loads of data from Eng
 
 # What is the ideal video duration for maximizing engagement?
 
-Have you ever wondered how the trend of a YouTube video’s length evolves through time? Does it have anything to do with the success of the video? And if we want to upload a video of what duration should it be? We try to get some insights on these questions by analyzing video durations.
+Have you ever wondered how the trend of a YouTube video’s length evolves through time? Does it have anything to do with the success of the video? And if we want to upload a video, of what duration should it be? We try to get some insights on these questions by analyzing video durations.
 
-In our analysis we split videos into 2 groups short to medium length videos (0-20 minutes) and medium to long videos (more than 20 minutes) as we suppose these are 2 significantly different video types.
+In our analysis we split videos into 2 groups: short to medium length videos (0-20 minutes) and medium to long videos (more than 20 minutes) as we suppose these are 2 significantly different video types.
 
 ### Videos of less than 20 minutes
 
-The first basic thing to do is to see whether there exists a correlation between video durations and number of likes and dislikes.
+The first basic thing to do is to see whether there exists a correlation between video durations and the number of likes and dislikes.
 
 <script>
 function showFrame1_0(frameId) {
@@ -57,7 +57,7 @@ function showFrame1_0(frameId) {
 <iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson0.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_1_1" style="display: block;">Likes</iframe>
 <iframe class="figure_1_1" src="assets/plot/1_1_bars_pearson1.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_1_2" style="display: none;">Dislikes</iframe>
 
-There is a relatively high positive correlation (that is decreasing across the years), but significant (p_value < 0.05) between the duration of a video and the number of likes it gets. Moreover, we see significant negative correlations in most years between # of dislikes and duration and so with longer videos the number of dislikes decreases. This can be explained by the fact that with longer videos on average, the video contains more content and so is more valuable/interesting and thus gets more likes and less dislikes.
+There is a relatively high positive correlation (that is decreasing across the years), but significant (p_value < 0.05) between the duration of a video and the number of likes it gets. Moreover, we see significant negative correlations in most years between the number of dislikes and duration and so with longer videos the number of dislikes decreases. This can be explained by the fact that with longer videos on average, the video contains more content and so is more valuable/interesting and thus gets more likes and less dislikes.
 
 Let's now see the trend of likes, dislikes, and duration over the years to take their evolution into consideration.
 
@@ -97,9 +97,9 @@ Let's now see how the video duration is related to user engagement. We do it by 
 
 <iframe src="assets/plot/1_1_moving_avf_1.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-Wow!! See that huge drop around 600 seconds =10 minutes?? Is it by sheer luck?? Let’s dig deeper into this.
+Wow!! See that huge drop around 600 seconds = 10 minutes?? Is it by sheer luck?? Let’s dig deeper into this.
 
-Our hypothesis is that the drop could be caused by an enormous number of 10min videos on YouTube that contain low quality content, as youtubers usually try to produce videos around this duration to benefit from more ads on their videos (YouTube has a video length threshold of 10 min past which youtubers get 2 ads on their videos and thus more money). Let’s try to prove this.
+Our hypothesis is that the drop could be caused by an enormous number of 10 minutue videos on YouTube that contain low quality content, as youtubers usually try to produce videos around this duration to benefit from more ads on their videos (YouTube has a video length threshold of 10 minutes past which youtubers get 2 ads on their videos and thus more money). Let’s try to prove this.
 
 <script>
 function showFrame1_3(frameId) {
@@ -131,7 +131,7 @@ function showFrame1_3(frameId) {
 <iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_2.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_3_3" style="display: none;">Ratio</iframe>
 <iframe class="figure_1_3" src="assets/plot/1_1_10_mint_stat_3.html" width="750px" height="550px" frameborder="0" position="relative" id="id_1_3_4" style="display: none;">Duration</iframe>
 
-First we make sure that the drop is not caused by the “moving” nature of the average. Indeed, we see that even by plotting the mean for each time interval (not 'moving') the drop is still there. Also, we notice that the number of likes decreased but the number of dislikes and number of videos stayed the same between the 10 min interval and the interval before it.
+First we make sure that the drop is not caused by the “moving” nature of the average. Indeed, we see that even by plotting the mean for each time interval (not 'moving') the drop is still there. Also, we notice that the number of likes decreased but the number of dislikes and number of videos stayed the same between the 10 minutes interval and the interval before it.
 
 Let’s try to focus only on the 10 minute videos.
 
@@ -217,11 +217,11 @@ Similarly for this case, the number of dislikes and likes have been increasing a
 
 <iframe src="assets/plot/1_1_moving_avf_2_long.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-Okay, we see that the ratio of likes to dislikes is fluctuating a lot for videos between 1200 seconds (20 min) and 10000 seconds (2.7 hours). Because this is a wide range, let's see how the videos spread out across this range and then break it down into smaller ranges and see what the videos are about in different smaller duration ranges.
+Okay, we see that the ratio of likes to dislikes is fluctuating a lot for videos between 1200 seconds (20 min) and 10000 seconds (2.7 hours). Because this is a wide range, let's see how the videos spread out across this range and then break it down into smaller ranges and see what the videos are about in these different smaller duration ranges.
 
 <iframe src="assets/plot/1_1_last_dist.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-So now, let's see what the people are speaking about in the videos.
+So now, let's see what are youtubers talking about in these videos.
 
 
 <table style="border: 1px solid black; width: 100%; text-align: center;margin-left: auto; margin-right: auto;">
@@ -320,18 +320,18 @@ So now, let's see what the people are speaking about in the videos.
     </tr>
 </table>
 
-As we can see from above, the videos between 20 and 60 minutes which account for (get the percentage of these videos from all long videos) of the videos, are still about the review of the tech products, but they are full and extended review video possibly broken into several parts, while the videos with duration above 1h are more from the release day live videos, that last for a couple of hours.
+As we can see from above, the videos between 20 and 60 minutes which account for the majority (77%) of the videos, are still about the review of the tech products, but they are full and extended review videos possibly broken into several parts, while the videos with duration above 1h are more from the release day live videos, that last for a couple of hours.
 
 Putting it all together we can say that the best range for the duration of a video is between 16 min and 2.7 hours, however longer videos are usually meant for live videos from conferences. The main takeaway here is that we certainly want to avoid having really short videos in order to provide meaningful content to viewers and also avoid having really long videos so that we avoid boring them!
 
 
 # How often should you release new content to optimize channel growth?
-As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews , one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
+As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews, one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
 
 As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie:
 
 - _0 - 10,000_  and  _10,000 - 50,000_   Very small YouTubers that often publish videos for fun and to their very small community.
-- _50,000 - 100,000_ and _100,000 - 500,000_: YouTubers that start to have sponsors , and thus some obligations to be regular as it's starting to take most of their time.
+- _50,000 - 100,000_ and _100,000 - 500,000_: YouTubers that start to have sponsors, and thus some obligations to be regular as it's starting to take most of their time.
 - _500,000 - 1.000,000_ and _1.000,000 - 2.500,000_: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
 - _2.500,000 - 5.000,000_ and _more_: very few YouTubers, known worldwide and being a reference as tech channels.
 
@@ -339,7 +339,7 @@ Let's first see their repartitions in this pie chart:
 
 <iframe src="assets/plot/1_2_pie.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-We can remark that more than half of them are small YouTubers, that almost a fifth are mid-range YouTubers, and that only around 6% of them are famous and have more than 500k subscribers. Our question then is , do you upload more frequency when you are famous? And more specifically, is the category in which you lie impacts your regularity?
+We can remark that more than half of them are small YouTubers, that almost a fifth are mid-range YouTubers, and that only around 6% of them are famous and have more than 500k subscribers. Our question then is, do you upload more frequently when you are famous? And more specifically, does the category in which you lie impact your regularity?
 
 To perform this analysis, we define the __regularity__ in the following way:
 
@@ -1071,3 +1071,4 @@ The dataset was further preprocessed to only keep tech review channles. We kept 
 This is why we want readers to take the results shown in this blog with a grain of salt; do not blindly follow the proposed guidelines, and leave room for innovation/exploration and taking risks. For example in our analysis we found out that videos between 16 min and 2.7 hours were the most plausible in order to provide useful content without boring viewers. However, lately YouTube announced YouTube shorts, which are super short videos (normally less than a minute) and these videos have been doing great and people were able to get insights from them.
 
 The sole goal of this analysis is to get insights about YouTube statistics for youtubers (and potentially for normal users who would like to know what the general trends on YouTube are). Yet this analysis get outdated very fast as once Youtube is crawled, we operate with static numbers, whereas the real numbers are fluctuating every day (videos considered are getting more or less likes, channels are getting more or less subscribers) and the dataset doesn’t take into consideration prior information to 2005 nor information after 2019. We also note that youtubers can delete their videos, channels, and viewers can remove their likes, dislikes or comments. However, even if youtubers, users do so, the data we use has already been collected and isn't influenced by this. This is why we again remind the reader to consider the insights shared with care.
+
