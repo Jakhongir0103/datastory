@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  A Numbers-Backed Analysis to Boost Your YouTube Tech Channel
+title: Boost Your Tech Channel with Numbers-Backed Analysis 
 subtitle: by Salma Ed-Dahabi, Jakhongir Saydaliev, Zied Masmoudi, Ali Essonni, Othmane Oudghiri
 cover-img: /assets/img/ada_thumbnail.png
 thumbnail-img: /assets/img/ada_thumbnail.png
@@ -959,7 +959,7 @@ Once the product is officially out, the videos shift gears and delve into:
 - Comparing the iPhone X with other smartphones on the market.
 - Testing various features of the iPhone X, such as the camera, screen, battery, and more.
 
-Now all of this is great, but we didn't really see how videos about those specific topics impacted the overall channel growth. Let's see the growth of those channels that were publishing videos in the pre-release period. We can measure it with trend rate 3 metrices: ratio of new subscribers to the total number of subscribers, ratio of new views to the total number of views, and the number of subscribers itself:
+Now all of this is great, but we didn't really see how videos about those specific topics impacted the overall channel growth. Let's see the growth of those channels that were publishing videos in the pre-release period. We can measure it with trend rate 2 metrices: the ratio of new subscribers to the total number of subscribers, and the ratio of new views to the total number of views:
 
 <script>
 function showFrame8(frameId) {
@@ -987,4 +987,57 @@ function showFrame8(frameId) {
 <iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_subs.html" width="750px" height="550px" frameborder="0" position="relative" id="id_2_timeseries" style="display: block;">Ratio Subs</iframe>
 <iframe class="3_2_timeseries" src="assets/plot/3_2_time_ratio_views.html" width="750px" height="550px" frameborder="0" position="relative" id="id_3_timeseries" style="display: none;">Ratio Views</iframe>
 
-It's evident that the channels talking about a product before its release experience growth well before the actual launch. What's intriguing is that they not only attract subscribers leading up to the release but also manage to retain those subscribers even after the product hits the market. It's like building anticipation pays off in long-term support!
+We noticed something interesting when we looked at channels that talked about iPhone leaks before it came out. Their growth kind of hit a plateau. But the real excitement kicked in once the iPhone X was officially released. From that point on, those channels saw a steady rise in views and subscribers. What's even cooler is that their growth didn't stop right after the release—it kept going strong.
+
+Now, let's check if these channels were still talking about the iPhone X even 4-5 months after it was released:
+
+<table style="border: 1px solid black; width: 50%; text-align: center; margin-left: auto; margin-right: auto;">
+  <tr>
+    <th style="text-align: center;">Trigrams in the titles</th>
+    <th style="text-align: center;">Frequency</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">vs iPhone X</td>
+    <td style="text-align: center;">14</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">for iPhone X</td>
+    <td style="text-align: center;">14</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">, iPhone X</td>
+    <td style="text-align: center;">11</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Case for iPhone</td>
+    <td style="text-align: center;">11</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">iPhone X vs</td>
+    <td style="text-align: center;">9</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Apple iPhone X</td>
+    <td style="text-align: center;">9</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Pixel 2 XL</td>
+    <td style="text-align: center;">8</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">iPhone X Case</td>
+    <td style="text-align: center;">8</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">iPhone X !</td>
+    <td style="text-align: center;">8</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">iPhone X :</td>
+    <td style="text-align: center;">8</td>
+  </tr>
+</table>
+
+Absolutely! Surprisingly, even in February, those channels are still discussing the iPhone X from various perspectives!
+
+So, here's the takeaway: discussing leaks and rumors before a product release can be a great way to build up excitement leading to the launch. It seems like it has a positive effect on the channel's growth. What's even more crucial is to keep making videos about the product for a couple of months after it's released. This is because while a small niche might be eager for details before the launch, the broader audience usually becomes interested in the product only after it hits the market.
