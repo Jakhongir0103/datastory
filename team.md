@@ -1,6 +1,6 @@
 ---
 layout: page
-subtitle: Meat the Team
+title: Meet The Team
 cover-img: /assets/img/team_thumbnail.jpeg
 thumbnail-img: /assets/img/team_thumbnail.jpeg
 share-img: /assets/img/team_thumbnail.jpeg

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Boost Your Tech Channel with A Numbers-Backed Analysis 
+title: Boost Your Tech Channel with A Numbers-Backed Analysis
 subtitle: by Salma Ed-Dahabi, Jakhongir Saydaliev, Zied Masmoudi, Ali Essonni, Othmane Oudghiri
 cover-img: /assets/img/ada_thumbnail.png
 thumbnail-img: /assets/img/ada_thumbnail.png
@@ -147,7 +147,7 @@ What if we compute the sum ?
 
 <iframe src="assets/plot/1_1_10_mint_stat_sum_0.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-We see from the above plot that the sum is decreasing from small duration to high duration (from the left time interval to the right time interval), but remember that the *number of videos* stayed the same for the 2 time intervals (480.2, 600) and (600, 719.8) which **explains the drop seen** when computing the mean (as we have the same denominator but a lower numerator: the like to dislike ratio is decreasing from small duration to high duration, whereas the number of videos has been decreasing from small duration to high duration **except** for the time interval of around 600 seconds = 10 minutes).
+We see from the above plot that the sum is decreasing from small duration to high duration (from the left time interval to the right time interval), but remember that the _number of videos_ stayed the same for the 2 time intervals (480.2, 600) and (600, 719.8) which **explains the drop seen** when computing the mean (as we have the same denominator but a lower numerator: the like to dislike ratio is decreasing from small duration to high duration, whereas the number of videos has been decreasing from small duration to high duration **except** for the time interval of around 600 seconds = 10 minutes).
 
 For the curious ones, further analysis on why the number of videos stayed the same for these 2 duration intervals can be found in our notebook.
 
@@ -222,7 +222,6 @@ Okay, we see that the ratio of likes to dislikes is fluctuating a lot for videos
 <iframe src="assets/plot/1_1_last_dist.html" width="750" height="550px" frameborder="0" position="relative">Plot</iframe>
 
 So now, let's see what are youtubers talking about in these videos.
-
 
 <table style="border: 1px solid black; width: 100%; text-align: center;margin-left: auto; margin-right: auto;">
     <tr>
@@ -324,13 +323,13 @@ As we can see from above, the videos between 20 and 60 minutes which account for
 
 Putting it all together we can say that the best range for the duration of a video is between 16 min and 2.7 hours, however longer videos are usually meant for live videos from conferences. The main takeaway here is that we certainly want to avoid having really short videos in order to provide meaningful content to viewers and also avoid having really long videos so that we avoid boring them!
 
-
 # How often should you release new content to optimize channel growth?
+
 As these tech channels jostle for attention in a crowded online space, specially in this field of tech reviews, one critical question arises: does the frequency of video uploads significantly influence their growth? And do they have to be very regular in terms of frequency to grow?
 
 As regularity depends highly on the status of YouTubers, whether it's their full time activity, and how wide is their community, we decided to split the YouTubers into 8 categories, each of them representing a certain range where they lie:
 
-- _0 - 10,000_  and  _10,000 - 50,000_   Very small YouTubers that often publish videos for fun and to their very small community.
+- _0 - 10,000_ and _10,000 - 50,000_ Very small YouTubers that often publish videos for fun and to their very small community.
 - _50,000 - 100,000_ and _100,000 - 500,000_: YouTubers that start to have sponsors, and thus some obligations to be regular as it's starting to take most of their time.
 - _500,000 - 1.000,000_ and _1.000,000 - 2.500,000_: Big YouTubers that start to have a big community, even fans, they usually do YouTube for a living and they win a lot through it.
 - _2.500,000 - 5.000,000_ and _more_: very few YouTubers, known worldwide and being a reference as tech channels.
@@ -341,7 +340,7 @@ Let's first see their repartitions in this pie chart:
 
 We can remark that more than half of them are small YouTubers, that almost a fifth are mid-range YouTubers, and that only around 6% of them are famous and have more than 500k subscribers. Our question then is, do you upload more frequently when you are famous? And more specifically, does the category in which you lie impact your regularity?
 
-To perform this analysis, we define the __regularity__ in the following way:
+To perform this analysis, we define the **regularity** in the following way:
 
 <div id="mathFormula" style="text-align: center; margin-left: auto; margin-right: auto;">
     \( \text{regularity} = n \cdot \log\left(1 + \frac{1}{\text{std}(f)}\right) \)
@@ -350,7 +349,6 @@ To perform this analysis, we define the __regularity__ in the following way:
     Where \( \text{n} \) is the number of videos uploaded within a month for a YouTuber, 
     and \( \text{f} = \frac{1}{\text{delay}} \) where \( \text{delay} \) is the time in days between 2 consecutive videos.
 </p>
-
 
 This metric evaluates not just the frequency of video uploads on tech channels but also the consistency of their posting schedule. Channels that maintain a regular interval between video uploads gain a distinct advantage, highlighting the importance of a steady content rhythm. In contrast, channels with erratic schedules-such as releasing multiple videos on a single day followed by a prolonged period of inactivity—are less favored by this metric. Thus, while the overall quantity of content remains a key factor, the regularity and predictability of uploads emerge as crucial elements in driving channel growth.
 
@@ -400,7 +398,6 @@ function showFrame2(frameId) {
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines2.5M-5M.html" width="750px" height="550px" frameborder="0" position="relative" id="id_7" style="display: none;">2.5M-5M</iframe>
 <iframe class="regularity_all" src="assets/plot/1_2_regularity_lines5M+.html" width="750px" height="550px" frameborder="0" position="relative" id="id_8" style="display: block;">5M+ Subscribers</iframe>
 
-
 Across the spectrum, a consistent trend becomes apparent: channels that maintain a steady rhythm in their posting schedules generally see a more robust growth rate. This correlation holds true for most subscriber categories, with a notable exception in the 500,000 to 1,000,000 subscriber bracket.
 
 For youtubers that have more than 5 000 0000 subscribers, we can observe that the growth rate fluctuates a lot, as they are only few youtubers within that category so it's more volatile, but despite the fluctuations, the trend is in overall similar to that of regularity.
@@ -413,7 +410,7 @@ Now, let's focus more on the group 4 (500k-1M subs), that has been problematic d
 
 <iframe src="assets/plot/1_2_bars_2.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
 
-From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups, using the same time series comparison that we have done before. 
+From the above plot we can see that the higher regularities are more correlated with the growth rate. So now, let's seperate those channels into 2 at regularity above and below 32, and see what's happening more in detail for those two subgroups, using the same time series comparison that we have done before.
 
 <script>
 function showFrame1(frameId) {
@@ -465,7 +462,6 @@ In this section, we are going to focus on the types of review products. More spe
   </tr>
 </table>
 
-
 Let's first see which product types are more common among the YouTubers:
 
 <iframe src="assets/plot/1_3_timeseries.html" width="750px" height="550px" frameborder="0" position="relative">Plot</iframe>
@@ -473,6 +469,7 @@ Let's first see which product types are more common among the YouTubers:
 As we can see, most channels tend to focus on phones. It just means phones are a common topic to focus on, but we still need to see (in the next sub-section) how it actually influences the channel's growth.
 
 Now, we will answer the following sub-questions:
+
 - What range of product types should YouTubers should review?
 - Which product categories have higher influence on the channels growth?
 - Which product categories attract more viewers?
@@ -509,7 +506,6 @@ function showFrame3(frameId) {
 
 From the above distribution of 'narrow' and 'wide' channels, we can see that non of the 2 groups is clearly outperforming the other. We can also confirm it more statistically. In fact, when we compute the statistical difference between them we get the following results:
 
-
 <table style="border: 1px solid black; width: 50%; text-align: center;margin-left: auto; margin-right: auto;">
   <tr>
     <th></th>
@@ -522,7 +518,6 @@ From the above distribution of 'narrow' and 'wide' channels, we can see that non
     <td style="text-align: center;">0.88</td>
   </tr>
 </table>
-
 
 Being both pvalues larger than 0.05, it further confirms that whether or not a channel focuses on a single product review, or covers a wider range of products, it does not have a direct influence on the growth of the channel, i.e. number of subscribers/views.
 
@@ -541,6 +536,7 @@ We can read the above graph as follows:
 By doing that we can see that the videos about _phones_, _headphones_ and _laptops_ have stronger bond compared to the other pairs, meaning most of the successful channels tend to cover the combination of these products.
 
 ### Which product categories attract more viewers?
+
 Now, we know the secret combination of the tech products, but does that mean these are the only 3 products that go successful? Let's find it out!
 
 For each video uploaded, let's get the ratio of the number of views of the video to the total number of views of the channel at the time of release of the video. Then, we want to see if any one of the products have a clearly higher ratio of views compared to the others. The reason why we are diving the number of views by the total number of views of the channel at the time of the release is to remove the influence of the current popularity of the channel.
@@ -552,7 +548,6 @@ Here, we can see that no single product is totally outperforming the other. Howe
 In summary, we can draw the following conclusions:
 There isn't a significant statistical difference in the number of subscribers and total views between channels focusing on specific tech products and those covering a broader range. This implies that the diversity of reviewed product types doesn't noticeably impact the growth of the channels.
 Among the successful channels covering a wide range of tech products, the ones that attract more viewers are Phones, Desktop setup, Laptop, and Headphones, in that order of importance. Successful channels often produce videos featuring a combination of Phones, Laptop, and Headphones.
-
 
 # Can the sentiment in your video title affect its view count?
 
@@ -571,7 +566,7 @@ $$ Y = 0.55 + 0.18 \cdot S_2 $$
 
 </div>
 
-with the following likelihood: 
+with the following likelihood:
 
 <table style="border: 1px solid black; width: 50%; text-align: center;margin-left: auto; margin-right: auto;">
     <tr>
@@ -647,7 +642,7 @@ As you can see from the above histograms, tech giants certainly gain a lot of at
 We also see that there are some moments where viewers show interest before the release of the product. It would be interesting to dig deeper into what topics are discussed during this period, which is what we do in the next section.
 We can thus sat that, since we see a massive interest in the products near their release date, it is in the youtuber’s advantage to discuss topics related to the product near its release date. Now let's prove this more analytically;
 
-For our investigation, we've chosen the following three items: 
+For our investigation, we've chosen the following three items:
 
 <table style="border: 1px solid black; width: 100%; text-align: center;">
   <tr>
@@ -814,7 +809,7 @@ Oh, it is not about iPhone 7 anymore. Hold on, let's see what other products hit
     </tr>
 </table>
 
-Ah, now it makes sense! Turns out, there were lots of videos about other cool tech stuff during this period, i.e. from Xiaomi and Samsung. That's why even the channels that didn't talk about the iPhone 7 release saw an increase in their overall growth. It's like everyone was buzzing about tech goodness! 
+Ah, now it makes sense! Turns out, there were lots of videos about other cool tech stuff during this period, i.e. from Xiaomi and Samsung. That's why even the channels that didn't talk about the iPhone 7 release saw an increase in their overall growth. It's like everyone was buzzing about tech goodness!
 
 But is it only for iPhone 7? Let's us give it a check and do the same analysis for the 2nd Group of Galaxy S9 as well, for example. Let's see what the videos were mostly about:
 
@@ -857,9 +852,9 @@ Indeed we again see a similar result for this group as well.
 
 In looking at all our findings, here's what we've figured out: When we focus on a specific product, we tend to see one of two things happening:
 
-- __Clear Gains:__ Some channels experience a noticeable increase in views and subscribers, showing an uptick in their trend rate between the two red lines. Meanwhile, the other group doesn't see the same boost.
+- **Clear Gains:** Some channels experience a noticeable increase in views and subscribers, showing an uptick in their trend rate between the two red lines. Meanwhile, the other group doesn't see the same boost.
 
-- __No Clear Gains:__ In some cases, there's no clear gain. After digging a bit deeper, it seems this happens when the release of the item we're focusing on overlaps with releases from other products that the control channels discuss. Both channels see a trend rate increase, but for different reasons—the impact of the considered item gets somewhat "hidden" amid the simultaneous release of other items.
+- **No Clear Gains:** In some cases, there's no clear gain. After digging a bit deeper, it seems this happens when the release of the item we're focusing on overlaps with releases from other products that the control channels discuss. Both channels see a trend rate increase, but for different reasons—the impact of the considered item gets somewhat "hidden" amid the simultaneous release of other items.
 
 Moreover, we've noticed that the curves for the number of views and subscribers usually follow a similar shape within a given item, group, and type of channel.
 
@@ -1049,26 +1044,25 @@ So, here's the takeaway: discussing leaks and rumors before a product release ca
 
 Summing up our comprehensive analysis of YouTube tech channels, here are the key findings:
 
-__Ideal Video Duration:__ Aim for videos between 16 minutes and 2.7 hours to strike a balance between providing meaningful content and avoiding viewer boredom. However videos above 40 minutes are typically reserved for live conferences.
+**Ideal Video Duration:** Aim for videos between 16 minutes and 2.7 hours to strike a balance between providing meaningful content and avoiding viewer boredom. However videos above 40 minutes are typically reserved for live conferences.
 
-__Content Release Frequency:__ Consistent and frequent video uploads with low volatility contribute to higher success and growth rates. Sustaining high regularity is crucial for channels with 500k to 1M subscribers to maintain accelerated growth.
+**Content Release Frequency:** Consistent and frequent video uploads with low volatility contribute to higher success and growth rates. Sustaining high regularity is crucial for channels with 500k to 1M subscribers to maintain accelerated growth.
 
-__Impact of Reviewed Product Type:__ The diversity of reviewed product types doesn't significantly impact channel growth. Successful channels covering a broad range find the most success with videos on Phones, Desktop setups, Laptops, and Headphones.
+**Impact of Reviewed Product Type:** The diversity of reviewed product types doesn't significantly impact channel growth. Successful channels covering a broad range find the most success with videos on Phones, Desktop setups, Laptops, and Headphones.
 
-__Sentiment in Video Titles:__ Positive sentiments in video titles could be important. Channels with positive language can boost views by up to a third compared to neutral titles. However, it's essential to note that other factors like thumbnails could influence the results.
+**Sentiment in Video Titles:** Positive sentiments in video titles could be important. Channels with positive language can boost views by up to a third compared to neutral titles. However, it's essential to note that other factors like thumbnails could influence the results.
 
-__Product Launch Events:__ Tech product releases, not just from big brands, provide a golden opportunity for channel growth. Discussing leaks and rumors before the launch builds excitement, and continuing coverage for a few months post-release is crucial to capture the broader audience's interest.
+**Product Launch Events:** Tech product releases, not just from big brands, provide a golden opportunity for channel growth. Discussing leaks and rumors before the launch builds excitement, and continuing coverage for a few months post-release is crucial to capture the broader audience's interest.
 
 In essence, the analysis guides content creators to strike the right balance in video duration, maintain consistency in uploads, explore a diverse range of tech products, use positive language in titles, and capitalize on the buzz around product launches for sustained channel growth.
 
 # Ethical discussion
 
-The dataset _Youniverse_ used for this analysis can be found on the _zenodo_ website. It contains english YouTube videos from 2005 to 2019 obtained from YouTube and two other thirdparty sources that aggregate YouTube metadata, through crawling and tracking; no labeling was required. This means that we are discriminataing other videos that are using other foreign languages. 
-We would like to note that this dataset contains no unsafe data; this is monitored by YouTube (if there was a violent video it would have been banned from YouTube). Futhermore, the text from the comments section was removed and users that commented were anonymized to preservetheir privacy. 
+The dataset _Youniverse_ used for this analysis can be found on the _zenodo_ website. It contains english YouTube videos from 2005 to 2019 obtained from YouTube and two other thirdparty sources that aggregate YouTube metadata, through crawling and tracking; no labeling was required. This means that we are discriminataing other videos that are using other foreign languages.
+We would like to note that this dataset contains no unsafe data; this is monitored by YouTube (if there was a violent video it would have been banned from YouTube). Futhermore, the text from the comments section was removed and users that commented were anonymized to preservetheir privacy.
 However, we disclaim that de-anonymization of the data is possible through matching on a large number of videos where a user commented. Indeed, youtubers and normal users weren’t notified at the time of the data collection, however, first, viewers have been anonymized, second users agreed to the terms and conditions of YouTube before using the platform, allowing YouTube to collect private infomation to anlayse and offer a better user experiecne, third, youtubers publishing videos and viewers commenting on their videos are doing so publicly, and so the data was already there; it was just collected and the statistics shared are aggregates and not individually targeted.
 
 The dataset was further preprocessed to only keep tech review channles. We kept a large number of channels/videos in order to have a dataset that is more likely to be representative of the whole popultaion of tech review channels. However, one must always keep in mind that biases might be present due to the preprocessing procedure which might influence what channels/videos were kept, potentially over-representing certain groups/types of channels and under-representing others.
 This is why we want readers to take the results shown in this blog with a grain of salt; do not blindly follow the proposed guidelines, and leave room for innovation/exploration and taking risks. For example in our analysis we found out that videos between 16 min and 2.7 hours were the most plausible in order to provide useful content without boring viewers. However, lately YouTube announced YouTube shorts, which are super short videos (normally less than a minute) and these videos have been doing great and people were able to get insights from them.
 
 The sole goal of this analysis is to get insights about YouTube statistics for youtubers (and potentially for normal users who would like to know what the general trends on YouTube are). Yet this analysis get outdated very fast as once Youtube is crawled, we operate with static numbers, whereas the real numbers are fluctuating every day (videos considered are getting more or less likes, channels are getting more or less subscribers) and the dataset doesn’t take into consideration prior information to 2005 nor information after 2019. We also note that youtubers can delete their videos, channels, and viewers can remove their likes, dislikes or comments. However, even if youtubers, users do so, the data we use has already been collected and isn't influenced by this. This is why we again remind the reader to consider the insights shared with care.
-
