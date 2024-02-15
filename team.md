@@ -42,8 +42,7 @@ use-site-title: true
     <div style="text-align: center;">
         <h3>Zied Masmoudi</h3>
         <p><strong>Data Scientist</strong></p>
-        <p><a href="https://www.linkedin.com/in/zied-masmoudi-b68797289/">LinkedIn</a></p>
-        <p><a href="https://github.com/zmasmoud">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/zied-masmoudi-b68797289/">LinkedIn</a><br><a href="https://github.com/zmasmoud">GitHub</a></p>
     </div>
   </div>
 
@@ -51,8 +50,7 @@ use-site-title: true
     <div style="text-align: center;">
         <h3>Jakhongir Saydaliev</h3>
         <p><strong>Data Scientist</strong></p>
-        <p><a href="https://www.linkedin.com/in/jakhongir-saydaliev-0103/">LinkedIn</a></p>
-        <p><a href="https://github.com/Jakhongir0103">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/jakhongir-saydaliev-0103/">LinkedIn</a><br><a href="https://github.com/Jakhongir0103">GitHub</a></p>
     </div>
   </div>
   
@@ -60,8 +58,7 @@ use-site-title: true
     <div style="text-align: center;">
         <h3>Othmane Idrissi Oudghiri</h3>
         <p><strong>Data Scientist and Financial Engineer</strong></p>
-        <p><a href="https://www.linkedin.com/in/othmane-idrissi-oudghiri-364a37270/">LinkedIn</a></p>
-        <p><a href="https://github.com/OtiLeBoss">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/othmane-idrissi-oudghiri-364a37270/">LinkedIn</a><br><a href="https://github.com/OtiLeBoss">GitHub</a></p>
     </div>
   </div>
   <div class="team-member">
@@ -75,8 +72,7 @@ use-site-title: true
     <div style="text-align: center;">
         <h3>Ali Essonni</h3>
         <p><strong>Data Scientist and Financial Engineer</strong></p>
-        <p><a href="https://www.linkedin.com/in/ali-essonni-54b2051b1/">LinkedIn</a></p>
-        <p><a href="https://github.com/AliE02">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/ali-essonni-54b2051b1/">LinkedIn</a><br><a href="https://github.com/AliE02">GitHub</a></p>
     </div>
   </div>
 </div>
